@@ -1,110 +1,290 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo da Silva Pires</title>
-    <link rel="stylesheet" href="Style.css">
-</head>
-<body>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description"
+    content="Portfólio de Rodrigo da Silva Pires, desenvolvedor full stack especializado em HTML, CSS, JavaScript, React, Python e muito mais.">
+  <meta name="keywords" content="Desenvolvedor, Full Stack, HTML, CSS, JavaScript, React, Python, Portfólio">
+  <meta name="author" content="Rodrigo da Silva Pires">
+  <meta property="og:title" content="Portfólio de Rodrigo da Silva Pires">
+  <meta property="og:description" content="Conheça os projetos e habilidades de Rodrigo, desenvolvedor full stack.">
+  <meta property="og:image" content="images/foto-perfil.webp">
+  <meta property="og:url" content="https://www.seusite.com">
+  <title>Rodrigo da Silva Pires</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div class="content">
     <header>
-        <div class="container">
-            <div class="logo">
-                <a href="#">
-                    <h1>Rodrigo S. Pires</h1>
-                </a>
-            </div>
-    
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-    
-            <div class="btn-contato">
-                <a href="#contato">
-                    <button>Contato</button>
-                </a>
-            </div>
-        </div>
+      <div class="container">
+        <div class="logo" id="logo"><a href="#inicio">
+            <h1><span>Rodrigo</span>Pires</h1>
+          </a></div>
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#inicio" aria-label="Ir para o início">Início</a></li>
+            <li><a href="#projetos" aria-label="Ver projetos">Projetos</a></li>
+            <li><a href="#sobre" aria-label="Minhas qualidades">Qualidades</a></li>
+            <li><a href="#contato" aria-label="Entre em contato">Contato</a></li>
+          </ul>
+        </nav>
+        <nav class="redes-sociais"><a href="https://wa.me/5516992445497" class="social-icon whatsapp" target="_blank"
+            aria-label="Enviar WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a><a
+            href="#contato" class="social-icon email" aria-label="Enviar E-mail"><i
+              class="fa-regular fa-envelope"></i><span>E-mail</span></a></nav>
+      </div>
     </header>
-    
     <main>
-        <section class="topo-do-site">
-            <div class="container flex">
-                <div class="txt-topo-site">
-                    <h1>Bem-vindo<span>.</span></h1>
-                    <p>Olá! Sou Rodrigo, um desenvolvedor full stack especializado em Python. Tenho experiência com diversas ferramentas e tecnologias como HTML, CSS, JavaScript, React, Sass, entre outras. Adoro criar soluções eficientes e inovadoras para desafios complexos.</p>
-                                    
-                    <div class="btn-contato">
-                        <a href="#contato">
-                            <button>Entrar em contato</button>
-                        </a>
-                    </div>
-                </div>
-    
-                <div class="img-topo-site">
-                    <img src="images/foto_perfil.jpg" alt="Foto de Rodrigo">
-                </div>
-            </div>
-        </section>
-    
-        <section class="sobre" id="sobre">
-            <div class="container">
-                <h2>Sobre Mim</h2>
-                <p>Sou um desenvolvedor full stack apaixonado por tecnologia e inovação. Tenho sólida experiência em desenvolvimento web, capaz de criar aplicações robustas e escaláveis, utilizando as melhores práticas do mercado.</p>
-                
-                <h3>Minhas Especializações:</h3>
-                <ul>
-                    <li>Desenvolvimento com Python e Django</li>
-                    <li>Frontend com HTML, CSS, JavaScript e React</li>
-                    <li>Estilização avançada com Sass</li>
-                    <li>Gestão de versões com Git</li>
-                    <li>Desenvolvimento de APIs RESTful</li>
-                </ul>
-            </div>
-        </section>
-    
-        <section class="projetos" id="projetos">
-            <div class="container">
-                <h2>Projetos</h2>
-                <div class="grid-projetos">
-                    <div class="projeto">
-                        <img src="images/projeto1.png" alt="Projeto 1">
-                        <h3>Projeto 1</h3>
-                        <p>Descrição do projeto 1. Detalhes sobre as tecnologias utilizadas e funcionalidades implementadas.</p>
-                        <a href="#" class="btn">Ver mais</a>
-                    </div>
-                    <div class="projeto">
-                        <img src="images/projeto2.png" alt="Projeto 2">
-                        <h3>Projeto 2</h3>
-                        <p>Descrição do projeto 2. Explicação sobre o propósito do projeto e os desafios enfrentados.</p>
-                        <a href="#" class="btn">Ver mais</a>
-                    </div>
-                    <div class="projeto">
-                        <img src="images/projeto3.png" alt="Projeto 3">
-                        <h3>Projeto 3</h3>
-                        <p>Descrição do projeto 3. Informações sobre a implementação e os resultados alcançados.</p>
-                        <a href="#" class="btn">Ver mais</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Rodrigo da Silva Pires. Todos os direitos reservados.</p>
-            <div class="redes-sociais">
-                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-                <a href="#"><img src="images/github.png" alt="GitHub"></a>
-            </div>
+      <section class="topo-do-site" id="inicio">
+        <div class="container flex">
+          <div class="txt-topo-site">
+            <h1>Bem-vindo<span>.</span></h1>
+            <p>Olá! Meu nome é Rodrigo, e sou um desenvolvedor<span>full stack</span>.<br>Tenho experiência com diversas
+              ferramentas e tecnologias como HTML, CSS, JavaScript, React, Bootstrap, Sass, entre outras. Estou me
+              especializando em Python e adoro criar soluções eficientes e inovadoras para desafios complexos.</p>
+            <nav class="redes-sociais"><a href="https://github.com/rodrigao-sp" class="social-icon github"
+                aria-label="GitHub"><i class="fab fa-github"></i><span>GitHub</span></a><a
+                href="https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/" class="social-icon linkedin"
+                aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a><a
+                href="pages/curriculo.html" class="social-icon curriculo" aria-label="Currículo"><i
+                  class="fa-regular fa-file"></i><span>Currículo</span></a></nav>
+          </div>
+          <div class="img-container"><img src="images/foto-perfil.webp" alt="Imagem de Rodrigo" class="img-perfil">
+          </div>
         </div>
+      </section>
+      <section class="projetos" id="projetos">
+        <div class="container">
+          <h2>Meus Projetos</h2>
+          <div class="projeto"><img src="images/SiteGamesshop.webp"
+              alt="Visual do Site Games Shop, desenvolvido com tecnologias web modernas">
+            <div class="projeto-conteudo">
+              <h3>Site Games Shop</h3>
+              <p>Desenvolvimento de um site de comércio eletrônico focado na venda de jogos, utilizando HTML e CSS para
+                criação de uma interface simples, mas eficaz.</p><a href="https://site-gamesshop-beta-vert.vercel.app/"
+                class="btn"><i class="fa-solid fa-globe"></i>Visitar Site</a><a
+                href="https://github.com/rodrigao-sp/site_gamesshop" class="btn"><i class="fab fa-github"></i>Código
+                Fonte</a>
+            </div>
+          </div>
+          <div class="projeto"><img src="images/Calculadora de médias.webp"
+              alt="Visual do Projeto de Calculadora de Médias, desenvolvido com tecnologias web modernas">
+            <div class="projeto-conteudo">
+              <h3>Calculadora de Médias</h3>
+              <p>Aplicação web interativa que permite calcular médias de notas, construída com HTML, CSS e JavaScript
+                para um funcionamento dinâmico e intuitivo.</p><a
+                href="https://projeto-calculadora-medias-inky-seven.vercel.app/" class="btn"><i
+                  class="fa-solid fa-globe"></i>Visitar Aplicação</a><a
+                href="https://github.com/rodrigao-sp/projeto_calculadora_medias" class="btn"><i
+                  class="fab fa-github"></i>Código Fonte</a>
+            </div>
+          </div>
+          <div class="projeto"><img src="images/Agenda-contatos.webp"
+              alt="Visual do Projeto Agenda de Contatos, desenvolvido com tecnologias web modernas">
+            <div class="projeto-conteudo">
+              <h3>Agenda de Contatos</h3>
+              <p>Sistema de gerenciamento de contatos criado com HTML, CSS e JavaScript, permitindo a organização e
+                visualização de informações de forma eficiente.</p><a
+                href="https://agenda-de-contatos-lovat-eight.vercel.app/" class="btn"><i
+                  class="fa-solid fa-globe"></i>Visitar Aplicação</a><a
+                href="https://github.com/rodrigao-sp/agenda_de_contatos" class="btn"><i class="fab fa-github"></i>Código
+                Fonte</a>
+            </div>
+          </div>
+          <div class="projeto"><img src="images/WeatherApp.webp"
+              alt="Visual do Projeto Weather App, desenvolvido com tecnologias web modernas">
+            <div class="projeto-conteudo">
+              <h3>Weather App</h3>
+              <p>Aplicativo de previsão do tempo que utiliza uma API de clima para fornecer informações meteorológicas
+                em tempo real.</p><a href="https://weatherapp-exemplo.vercel.app/" class="btn"><i
+                  class="fa-solid fa-globe"></i>Visitar Aplicação</a><a
+                href="https://github.com/rodrigao-sp/weather_app" class="btn"><i class="fab fa-github"></i>Código
+                Fonte</a>
+            </div>
+          </div>
+          <div class="projeto"><img src="images/Portfolio.webp"
+              alt="Visual do Projeto Portfólio, desenvolvido com tecnologias web modernas">
+            <div class="projeto-conteudo">
+              <h3>Meu Portfólio</h3>
+              <p>Site pessoal de portfólio para exibir meus trabalhos e habilidades, desenvolvido com HTML, CSS e
+                JavaScript.</p><a href="https://meu-portfolio.vercel.app/" class="btn"><i
+                  class="fa-solid fa-globe"></i>Visitar Site</a><a href="https://github.com/rodrigao-sp/portfolio"
+                class="btn"><i class="fab fa-github"></i>Código Fonte</a>
+            </div>
+          </div>
+          <div class="projeto"><img src="images/TaskManager.webp"
+              alt="Visual do Projeto Gerenciador de Tarefas, desenvolvido com tecnologias web modernas">
+            <div class="projeto-conteudo">
+              <h3>Gerenciador de Tarefas</h3>
+              <p>Aplicação para gerenciamento de tarefas diárias, com suporte a criação, edição e exclusão de tarefas.
+              </p><a href="https://taskmanager-exemplo.vercel.app/" class="btn"><i class="fa-solid fa-globe"></i>Visitar
+                Aplicação</a><a href="https://github.com/rodrigao-sp/task_manager" class="btn"><i
+                  class="fab fa-github"></i>Código Fonte</a>
+            </div>
+          </div>
+          <div class="projeto"><img src="images/Ecommerce.webp"
+              alt="Visual do Projeto E-commerce, desenvolvido com tecnologias web modernas">
+            <div class="projeto-conteudo">
+              <h3>Loja Virtual</h3>
+              <p>Projeto de e-commerce com integração de carrinho de compras e checkout, usando tecnologias modernas
+                como React e Node.js.</p><a href="https://loja-virtual-exemplo.vercel.app/" class="btn"><i
+                  class="fa-solid fa-globe"></i>Visitar Site</a><a href="https://github.com/rodrigao-sp/ecommerce"
+                class="btn"><i class="fab fa-github"></i>Código Fonte</a>
+            </div>
+          </div>
+          <div class="projeto"><img src="images/SocialNetwork.webp"
+              alt="Visual do Projeto Rede Social, desenvolvido com tecnologias web modernas">
+            <div class="projeto-conteudo">
+              <h3>Rede Social</h3>
+              <p>Desenvolvimento de uma rede social básica com funcionalidades de postagem, comentários e curtidas,
+                utilizando MERN Stack.</p><a href="https://rede-social-exemplo.vercel.app/" class="btn"><i
+                  class="fa-solid fa-globe"></i>Visitar Aplicação</a><a
+                href="https://github.com/rodrigao-sp/social_network" class="btn"><i class="fab fa-github"></i>Código
+                Fonte</a>
+            </div>
+          </div>
+          <div class="projeto"><img src="images/Blog.webp"
+              alt="Visual do Projeto Blog Pessoal, desenvolvido com tecnologias web modernas">
+            <div class="projeto-conteudo">
+              <h3>Blog Pessoal</h3>
+              <p>Blog pessoal onde compartilho artigos sobre desenvolvimento web, com suporte a comentários e sistema de
+                categorias.</p><a href="https://blog-pessoal-exemplo.vercel.app/" class="btn"><i
+                  class="fa-solid fa-globe"></i>Visitar Blog</a><a href="https://github.com/rodrigao-sp/blog_pessoal"
+                class="btn"><i class="fab fa-github"></i>Código Fonte</a>
+            </div>
+          </div>
+          <div class="projeto"><img src="images/FitnessApp.webp"
+              alt="Visual do Projeto Fitness App, desenvolvido com tecnologias web modernas">
+            <div class="projeto-conteudo">
+              <h3>Fitness App</h3>
+              <p>Aplicativo de acompanhamento de treino e dieta, com funcionalidades para registro de atividades físicas
+                e consumo calórico.</p><a href="https://fitness-app-exemplo.vercel.app/" class="btn"><i
+                  class="fa-solid fa-globe"></i>Visitar Aplicação</a><a
+                href="https://github.com/rodrigao-sp/fitness_app" class="btn"><i class="fab fa-github"></i>Código
+                Fonte</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sobre" id="sobre">
+        <div class="container">
+          <h2>Qualidades</h2>
+          <p>Sou um desenvolvedor full stack apaixonado por tecnologia e inovação, com vasta experiência em criar
+            aplicações web robustas e escaláveis, sempre utilizando as melhores práticas do mercado, com ampla
+            facilidade de trabalhar em equipe.</p>
+          <div class="icons">
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                alt="HTML5">
+              <div class="tooltip">HTML5</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                alt="CSS3">
+              <div class="tooltip">CSS3</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                alt="Python">
+              <div class="tooltip">Python</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                alt="React">
+              <div class="tooltip">React</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                alt="JavaScript">
+              <div class="tooltip">JavaScript</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                alt="TypeScript">
+              <div class="tooltip">TypeScript</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="Sass">
+              <div class="tooltip">Sass</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+                alt="Docker">
+              <div class="tooltip">Docker</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg"
+                alt="Scala">
+              <div class="tooltip">Scala</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg"
+                alt="Swift">
+              <div class="tooltip">Swift</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+                alt="Redux">
+              <div class="tooltip">Redux</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
+                alt="Vue.js">
+              <div class="tooltip">Vue.js</div>
+            </div>
+            <div class="icon-item"><img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="Django">
+              <div class="tooltip">Django</div>
+            </div>
+            <div class="icon-item"><img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg" alt="Gulp">
+              <div class="tooltip">Gulp</div>
+            </div>
+          </div>
+          <h3>Especializações</h3>
+          <div class="wrapper">
+            <div class="itemLeft item1">Html</div>
+            <div class="itemLeft item2">Css</div>
+            <div class="itemLeft item3">JavaScript</div>
+            <div class="itemLeft item4">React</div>
+            <div class="itemLeft item5">Python</div>
+            <div class="itemLeft item6">Bootstrap</div>
+            <div class="itemLeft item7">Docker</div>
+            <div class="itemLeft item8">Git</div>
+          </div>
+        </div>
+      </section>
+      <section class="contato" id="contato">
+        <div class="container form-container">
+          <h2>Precisa de um desenvolvedor?</h2>
+          <form id="contactForm" action="mailto:rodrigodasilvapires@gmail.com" method="post" enctype="text/plain"><label
+              for="name">Nome:</label><input type="text" id="name" name="name" required><label
+              for="email">E-mail:</label><input type="email" id="email" name="email" required><label
+              for="phone">Telefone:</label><input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}"
+              placeholder="(XX) XXXXX-XXXX"><label for="message">Mensagem:</label><textarea id="message" name="message"
+              rows="4" required></textarea><button type="submit">Enviar</button></form>
+          <div id="formMessage" style="display:none">Mensagem enviada com sucesso! Responderei o mais breve possivel.
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Rodrigo da Silva Pires. Todos os direitos reservados.</p>
+        <div class="footer-icons"><a href="https://github.com/rodrigao-sp" class="social-icon github"
+            aria-label="GitHub"><i class="fab fa-github"></i></a><a
+            href="https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/" class="social-icon linkedin"
+            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div>
+      </div>
     </footer>
-    
+  </div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo de Rodrigo da Silva Pires</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        text-align: center;
+        max-width: 800px;
+        margin: 24px auto;
+        padding: 20px;
+      }
+
+      header,
+      section {
+        margin-bottom: 24px;
+      }
+
+      .nome {
+        margin: 32px;
+      }
+
+      .dados {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+        margin-bottom: 32px;
+      }
+
+      h1 {
+        margin-bottom: 16px;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+
+      h3 {
+        font-size: 20px;
+        margin: 32px 0 12px;
+      }
+
+      hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 16px 0;
+      }
+
+      .qualificacoes,
+      .experiencia,
+      .formacao {
+        text-align: left;
+      }
+
+      .qualificacoes ul,
+      .experiencia ul,
+      .formacao ul {
+        list-style-type: square;
+        margin-left: 20px;
+      }
+
+      .qualificacoes li,
+      .experiencia li,
+      .formacao li {
+        margin-bottom: 8px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+
+        .dados {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nome">
+      <h1>Rodrigo da Silva Pires</h1>
+    </header>
+
+    <section class="dados">
+      <div class="cadastrais">
+        <p>Avenida Geralda Rocha Silva, 2684</p>
+        <p>Bairro: Tropical</p>
+        <p>Cidade: São Paulo - SP</p>
+        <p>CEP: 14407-032</p>
+        <p>Tel.: <a href="tel:+5516992445497">(16) 9 9244 - 5497</a></p>
+        <p>
+          E-mail:
+          <a href="mailto:rodrigo.spires@email.com"
+            >rodrigodasilvapires@gmail.com</a
+          >
+        </p>
+      </div>
+      <div class="pessoais">
+        <p>Natural: São Paulo - SP</p>
+        <p>Estado Civil: Solteiro</p>
+        <p>Gênero: Masculino</p>
+        <p>Data de Nascimento: 27/06/1993</p>
+        <p>
+          GitHub:
+          <a href="https://github.com/rodrigao-sp">github.com/rodrigao-sp</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/"
+            >linkedin.com/in/rodrigo-da-silva-pires</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Desenvolvedor Full Stack / Front-End</h2>
+    </section>
+
+    <section class="qualificacoes">
+      <h3>Qualificações</h3>
+      <hr />
+      <ul>
+        <li>
+          Conhecimento em desenvolvimento web utilizando HTML, CSS, JavaScript e
+          frameworks como React.js.
+        </li>
+        <li>
+          Experiência básica em desenvolvimento back-end com Node.js e Express.
+        </li>
+        <li>
+          Familiaridade com bancos de dados relacionais (MySQL, PostgreSQL) e
+          não-relacionais (MongoDB).
+        </li>
+        <li>
+          Atualmente em especialização em Python, com foco em desenvolvimento
+          web (Django, Flask).
+        </li>
+        <li>Conhecimento em controle de versão com Git e GitHub.</li>
+      </ul>
+    </section>
+
+    <section class="experiencia">
+      <h3>Experiência Profissional</h3>
+      <hr />
+      <ul>
+        <li>
+          Projeto de Estudo: Desenvolvi uma aplicação web simples utilizando
+          HTML, CSS, JavaScript e React para praticar conceitos de front-end.
+        </li>
+      </ul>
+    </section>
+
+    <section class="formacao">
+      <h3>Formação Acadêmica</h3>
+      <hr />
+      <ul>
+        <li>Informática Profissionalizante - BitCompany, 2011</li>
+        <li>Full Stack - EBAC, 2024</li>
+        <li>Python Básico - Hashtag Programações, 2024</li>
+        <li>
+          Especialização em Python para Web Development - EBAC, 2024 (em
+          andamento)
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
