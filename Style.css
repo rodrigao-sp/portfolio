@@ -1,12 +1,11 @@
 :root {
     --primary-color: #007bff;
-    --secondary-color: #121212;
-    --text-color: #fff;
+    --secondary-color: black;
+    --text-color: #f8f9fa;
     --text-color-light: #ccc;
     --background-color: black;
     --hover-background: #0056b3;
     --transition-duration: 0.3s;
-    --header-height: 64px;
     --icon-hover-scale: 1.3;
     --icon-transition: 0.5s;
 }
@@ -46,10 +45,8 @@ body {
     z-index: -1;
 }
 
-#particles-js,
 .qualidades,
 .topo-do-site,
-footer,
 header {
     background-color: var(--background-color);
 }
@@ -172,6 +169,7 @@ header .logo:hover {
 
 .menu-desktop ul li a:hover::after,
 header {
+    height: auto;
     width: 100%;
 }
 
@@ -182,8 +180,58 @@ section h2::after {
     position: absolute;
 }
 
+/* Menu mobile */
+.menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 50px 20px;
+}
+
+.menu-mobile ul li {
+    margin-bottom: 20px;
+}
+
+.menu-mobile ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.menu-mobile-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.menu-mobile-toggle span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu-mobile.active {
+    transform: translateX(0);
+}
+
 main {
-    padding-top: 84px;
+    padding-top: 24px;
 }
 
 section {
@@ -211,7 +259,6 @@ section h2::after {
 }
 
 section.topo-do-site {
-    margin-top: 64px;
     color: var(--text-color);
     display: flex;
 }
@@ -219,6 +266,7 @@ section.topo-do-site {
 .topo-do-site img {
     width: 300px;
     height: auto;
+    margin-left: 24px;
 }
 
 .txt-topo-site {
@@ -669,5 +717,78 @@ footer p {
 @keyframes scrollRight {
     to {
         right: -200px;
+    }
+}
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile-toggle {
+        display: flex;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-mobile ul {
+        padding: 20px;
+    }
+
+    .menu-mobile ul li {
+        margin-bottom: 10px;
+    }
+
+    .topo-do-site {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .topo-do-site img {
+        width: 200px;
+        height: auto;
+    }
+
+    .txt-topo-site {
+        margin-top: 24px;
+    }
+
+    .txt-topo-site h2 {
+        font-size: 2rem;
+    }
+
+    .txt-topo-site p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    section.qualidades h2 {
+        font-size: 1.5rem;
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    .projeto {
+        flex-direction: column;
+    }
+
+    .projeto img {
+        width: 100%;
+    }
+
+    .projeto-conteudo {
+        padding-left: 0;
+        padding-top: 20px;
     }
 }

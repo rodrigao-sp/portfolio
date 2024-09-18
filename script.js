@@ -1,3 +1,7 @@
+document.querySelector('.menu-mobile-toggle').addEventListener('click', function() {
+    document.querySelector('.menu-mobile').classList.toggle('active');
+});
+
 function aparecerElementos() {
     const elementos = document.querySelectorAll(".para-aparecer");
     const limiteVisibilidade = 0.8 * window.innerHeight;
