@@ -141,8 +141,8 @@ particlesJS("particles-js", {
         },
         modes: {
             repulse: {
-                distance: 200,
-                duration: 0.4
+                distance: 100,
+                duration: 0.5
             },
             push: {
                 particles_nb: 4
