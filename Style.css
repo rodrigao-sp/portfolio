@@ -733,12 +733,12 @@ footer p {
         text-align: center;
     }
 
-    html, body{
+    html, body {
         overflow-x: hidden;
     }
 
-    .container{
-        padding: 24px;
+    .container {
+        margin: 24px;
     }
 
     .menu-desktop {
@@ -790,8 +790,15 @@ footer p {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    .topo-do-site{
+    .container.flex {
+        flex-direction: column-reverse;
+    }
+
+    .img-perfil {
         margin-top: 24px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
     }
 
     /* Projetos */
@@ -806,17 +813,11 @@ footer p {
 
     .projeto-conteudo {
         text-align: center;
-        padding: 15px;
-    }
-
-    .projeto-conteudo h3 {
-        margin-top: 10px;
     }
 
     /* Qualidades */
     .icons {
-        gap: 40px;
-        padding: 0 20px;
+        gap: 50px;
     }
 
     .tooltip {
@@ -827,38 +828,26 @@ footer p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        padding: 0 15px;
     }
 
     /* Formulário de Contato */
-    .form-container {
-        padding: 0 15px;
-    }
-
     form {
         display: flex;
         flex-direction: column;
     }
 
-    form label, form input, form textarea {
+    form label, form input, form textarea, form button {
         width: 100%;
-        margin-bottom: 15px;
-    }
-
-    form button {
-        width: 100%;
-        padding: 10px;
     }
 
     /* Footer */
     footer {
-        padding: 20px 15px;
         text-align: center;
     }
 
     footer .footer-icons {
         justify-content: center;
-        margin-top: 15px;
     }
 }
+
 
