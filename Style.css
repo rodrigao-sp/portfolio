@@ -848,6 +848,10 @@ footer {
         width: 100%;
     }
 
+    .projeto {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #212121 100%);
+    }
+
     .projeto img {
         width: 100%;
         height: auto;
