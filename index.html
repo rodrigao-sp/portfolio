@@ -24,55 +24,55 @@
     <div class="container">
       <div class="logo" id="logo">
         <a href="#inicio">
-          <h1><span>Rodrigo</span></h1>
+          <h1><span>Rodrigo</span> S. Pires</h1>
         </a>
       </div>
-      <nav class="menu-desktop">
-        <ul>
-          <li><a href="#inicio" aria-label="Ir para o início">Início</a></li>
-          <li><a href="#projetos" aria-label="Ver projetos">Projetos</a></li>
-          <li>
-            <a href="#qualidades" aria-label="Minhas qualidades">Qualidades</a>
-          </li>
-          <li>
-            <a href="#contato" aria-label="Entre em contato">Contato</a>
-          </li>
-        </ul>
-      </nav>
+      <div>
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#inicio" aria-label="Ir para o início">Início</a></li>
+            <li><a href="#projetos" aria-label="Ver projetos">Projetos</a></li>
+            <li>
+              <a href="#qualidades" aria-label="Minhas qualidades">Qualidades</a>
+            </li>
+            <li>
+              <a href="#contato" aria-label="Entre em contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="menu-mobile-toggle" aria-label="Abrir o menu mobile">
         <span></span><span></span><span></span>
       </div>
-      <nav class="menu-mobile" aria-label="Menu mobile">
-        <ul>
-          <li><a href="#inicio" aria-label="Ir para o início">Início</a></li>
-          <li><a href="#projetos" aria-label="Ver projetos">Projetos</a></li>
-          <li>
-            <a href="#qualidades" aria-label="Minhas qualidades">Qualidades</a>
-          </li>
-          <li>
-            <a href="#contato" aria-label="Entre em contato">Contato</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="redes-sociais">
+      <div>
+        <nav class="menu-mobile" aria-label="Menu mobile">
+          <ul>
+            <li><a href="#inicio" aria-label="Ir para o início">Início</a></li>
+            <li><a href="#projetos" aria-label="Ver projetos">Projetos</a></li>
+            <li>
+              <a href="#qualidades" aria-label="Minhas qualidades">Qualidades</a>
+            </li>
+            <li>
+              <a href="#contato" aria-label="Entre em contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="redes-sociais">
         <a href="https://wa.me/5516992445497" class="social-icon whatsapp" target="_blank"
           aria-label="Enviar WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a><a href="#contato"
           class="social-icon email" aria-label="Enviar E-mail"><i
             class="fa-regular fa-envelope"></i><span>E-mail</span></a>
-      </nav>
+      </div>
     </div>
   </header>
   <main>
     <section class="topo-do-site" id="inicio">
-      <div class="container flex">
+      <div class="container">
         <div class="txt-topo-site">
-          <h2>Bem-vindo<span>.</span></h2>
           <p>
-            Olá! Meu nome é Rodrigo, e sou um desenvolvedor<span>
-              full stack</span>.<br />Tenho experiência com diversas ferramentas e tecnologias
-            como HTML, CSS, JavaScript, React, entre outras. Estou me
-            especializando em Python e adoro criar soluções eficientes e
-            inovadoras para desafios complexos.
+            Olá! Meu nome é Rodrigo, seu novo desenvolvedor<span>
+              full stack</span>.<br />
           </p>
           <nav class="redes-sociais">
             <a href="https://github.com/rodrigao-sp" class="social-icon github" aria-label="GitHub"><i
@@ -94,82 +94,102 @@
     <section class="projetos para-aparecer" id="projetos">
       <div class="container">
         <h2>Meus Projetos</h2>
-    
+
         <!-- Seção de Filtros -->
         <div class="filtros">
           <button class="filtro ativo" data-categoria="todos">Todos</button>
           <button class="filtro" data-categoria="sites">Sites</button>
           <button class="filtro" data-categoria="aplicacoes">Aplicações Web</button>
         </div>
-    
+
         <!-- Projetos -->
         <div class="projeto para-aparecer" data-categoria="sites">
-          <img src="images/Game-shop.webp" alt="Visual do site Games Shop, desenvolvido com tecnologias web modernas." />
+          <img src="images/Game-shop.webp"
+            alt="Visual do site Games Shop, desenvolvido com tecnologias web modernas." />
           <div class="projeto-conteudo">
             <h3>Games Shop</h3>
             <p>
-              Projeto de um site de comércio eletrônico especializado na venda de jogos, com foco em uma interface simples e funcional. Desenvolvido utilizando HTML e CSS, o site oferece uma experiência de navegação intuitiva, facilitando a visualização e compra dos produtos.
+              Projeto de um site de comércio eletrônico especializado na venda de jogos, com foco em uma interface
+              simples e funcional. Desenvolvido utilizando HTML e CSS, o site oferece uma experiência de navegação
+              intuitiva, facilitando a visualização e compra dos produtos.
             </p>
             <div class="btn-wrapper">
-              <a href="https://site-gamesshop-beta-vert.vercel.app/" class="btn"><i class="fa-solid fa-globe"></i>Visitar Site</a>
-              <a href="https://github.com/rodrigao-sp/site_gamesshop" class="btn"><i class="fab fa-github"></i>Código Fonte</a>
+              <a href="https://site-gamesshop-beta-vert.vercel.app/" class="btn"><i
+                  class="fa-solid fa-globe"></i>Visitar Site</a>
+              <a href="https://github.com/rodrigao-sp/site_gamesshop" class="btn"><i class="fab fa-github"></i>Código
+                Fonte</a>
             </div>
           </div>
         </div>
-    
+
         <div class="projeto para-aparecer" data-categoria="aplicacoes">
-          <img src="images/Calculadora-de-medias.webp" alt="Visual do projeto de Calculadora de Médias, desenvolvido com tecnologias web modernas." />
+          <img src="images/Calculadora-de-medias.webp"
+            alt="Visual do projeto de Calculadora de Médias, desenvolvido com tecnologias web modernas." />
           <div class="projeto-conteudo">
             <h3>Calculadora de Médias</h3>
             <p>
-              Aplicação web que permite calcular a média de notas de forma simples e eficiente. Desenvolvida com HTML, CSS e JavaScript, a calculadora oferece uma interface amigável e cálculos dinâmicos em tempo real.
+              Aplicação web que permite calcular a média de notas de forma simples e eficiente. Desenvolvida com HTML,
+              CSS e JavaScript, a calculadora oferece uma interface amigável e cálculos dinâmicos em tempo real.
             </p>
             <div class="btn-wrapper">
-              <a href="https://projeto-calculadora-medias-inky-seven.vercel.app/" class="btn"><i class="fa-solid fa-globe"></i>Visitar Aplicação</a>
-              <a href="https://github.com/rodrigao-sp/projeto_calculadora_medias" class="btn"><i class="fab fa-github"></i>Código Fonte</a>
+              <a href="https://projeto-calculadora-medias-inky-seven.vercel.app/" class="btn"><i
+                  class="fa-solid fa-globe"></i>Visitar Aplicação</a>
+              <a href="https://github.com/rodrigao-sp/projeto_calculadora_medias" class="btn"><i
+                  class="fab fa-github"></i>Código Fonte</a>
             </div>
           </div>
         </div>
-    
+
         <div class="projeto para-aparecer" data-categoria="sites">
-          <img src="images/Restaurante.webp" alt="Visual do projeto do site de restaurante, desenvolvido com HTML, CSS e Bootstrap." />
+          <img src="images/Restaurante.webp"
+            alt="Visual do projeto do site de restaurante, desenvolvido com HTML, CSS e Bootstrap." />
           <div class="projeto-conteudo">
             <h3>Restaurante</h3>
             <p>
-              Desenvolvimento de um site modelo para restaurante, utilizando HTML, CSS e Bootstrap para criar uma interface moderna e responsiva. O site foi pensado para oferecer uma navegação fluida e apresentar o menu do restaurante de forma atrativa.
+              Desenvolvimento de um site modelo para restaurante, utilizando HTML, CSS e Bootstrap para criar uma
+              interface moderna e responsiva. O site foi pensado para oferecer uma navegação fluida e apresentar o menu
+              do restaurante de forma atrativa.
             </p>
             <div class="btn-wrapper">
-              <a href="https://restaurante-weld.vercel.app/" class="btn"><i class="fa-solid fa-globe"></i>Visitar Site</a>
-              <a href="https://github.com/rodrigao-sp/restaurante" class="btn"><i class="fab fa-github"></i>Código Fonte</a>
+              <a href="https://restaurante-weld.vercel.app/" class="btn"><i class="fa-solid fa-globe"></i>Visitar
+                Site</a>
+              <a href="https://github.com/rodrigao-sp/restaurante" class="btn"><i class="fab fa-github"></i>Código
+                Fonte</a>
             </div>
           </div>
         </div>
-    
+
         <div class="projeto para-aparecer" data-categoria="sites">
-          <img src="images/Clone-disney.webp" alt="Visual do projeto Clone Disney+, desenvolvido com HTML, CSS, Gulp e SCSS." />
+          <img src="images/Clone-disney.webp"
+            alt="Visual do projeto Clone Disney+, desenvolvido com HTML, CSS, Gulp e SCSS." />
           <div class="projeto-conteudo">
             <h3>Clone Disney+</h3>
             <p>
-              Um clone do site de streaming Disney+, recriado com HTML, CSS, Gulp e SCSS para otimização de performance e estilização modular. O projeto é responsivo e reflete a estrutura visual e funcional do site original.
+              Um clone do site de streaming Disney+, recriado com HTML, CSS, Gulp e SCSS para otimização de performance
+              e estilização modular. O projeto é responsivo e reflete a estrutura visual e funcional do site original.
             </p>
             <div class="btn-wrapper">
-              <a href="https://clone-disneyplus-omega-gules.vercel.app/" class="btn"><i class="fa-solid fa-globe"></i>Visitar Site</a>
-              <a href="https://github.com/rodrigao-sp/clone_disneyplus" class="btn"><i class="fab fa-github"></i>Código Fonte</a>
+              <a href="https://clone-disneyplus-omega-gules.vercel.app/" class="btn"><i
+                  class="fa-solid fa-globe"></i>Visitar Site</a>
+              <a href="https://github.com/rodrigao-sp/clone_disneyplus" class="btn"><i class="fab fa-github"></i>Código
+                Fonte</a>
             </div>
           </div>
         </div>
-    
+
       </div>
-    </section>    
+    </section>
 
     <section class="qualidades para-aparecer" id="qualidades">
       <div class="container">
         <h2>Qualidades</h2>
         <p>
-          Sou um desenvolvedor full stack apaixonado por tecnologia e
-          inovação, com vasta experiência em criar aplicações web robustas e
-          escaláveis, sempre utilizando as melhores práticas do mercado, com
-          ampla facilidade de trabalhar em equipe.
+          Sou um desenvolvedor full stack apaixonado por tecnologia e inovação. Tenho ampla experiência na criação de
+          aplicações web robustas e escaláveis, sempre aplicando as melhores práticas do mercado. Minha expertise
+          abrange tecnologias como HTML, CSS, JavaScript, React, entre outras. Atualmente, estou me especializando em
+          Python, buscando sempre desenvolver soluções eficientes e criativas para desafios complexos. Tenho facilidade
+          em trabalhar em equipe e estou sempre disposto a aprender e compartilhar conhecimento para alcançar resultados
+          excepcionais.
         </p>
         <div class="icons">
           <div class="icon-item">
