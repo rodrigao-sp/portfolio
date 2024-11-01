@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { ProjectsCss } from "./styles";
-import EplayImage from "../../assets/images/Agenda-contatos.webp";
-import TarefasImage from "../../assets/images/Agenda-contatos.webp";
+import EplayImage from "../../assets/images/Eplay.webp";
+import TarefasImage from "../../assets/images/Tarefas.webp";
 import CalculadoraImage from "../../assets/images/Calculadora-de-medias.webp";
 import RestauranteImage from "../../assets/images/Restaurante.webp";
 import CloneDisneyImage from "../../assets/images/Clone-disney.webp";
+import AgendaImage from "../../assets/images/Agenda-contatos.webp";
 import { ButtonCss } from "../../styles";
 
 const Projects = () => {
@@ -15,16 +16,16 @@ const Projects = () => {
       titulo: "Eplay - Loja de Jogos",
       categoria: "sites",
       descricao:
-        "Loja virtual de jogos desenvolvida em React, utilizando Styled Components e integração com uma API para listagem de produtos. Interface responsiva e intuitiva, com foco na experiência do usuário.",
+        "Uma loja virtual de jogos, desenvolvida com React e Styled Components, que se destaca pela sua integração com uma API para a listagem de produtos. A interface é responsiva e intuitiva, proporcionando uma experiência de usuário excepcional, onde cada jogador pode navegar e encontrar facilmente seus jogos favoritos.",
       imgSrc: EplayImage,
-      linkSite: "https://eplay-loja-jogos.vercel.app/",
-      linkGithub: "https://github.com/rodrigao-sp/eplay_loja_jogos",
+      linkSite: "https://eplay-ashen-one.vercel.app/",
+      linkGithub: "https://github.com/rodrigao-sp/eplay",
     },
     {
       titulo: "Restaurante",
       categoria: "sites",
       descricao:
-        "Site modelo para restaurante, desenvolvido com HTML, CSS e Bootstrap. Possui design moderno e responsivo, focado em uma navegação fluida e apresentação atraente do menu.",
+        "Modelo de site para restaurante, criado com HTML, CSS e Bootstrap. Com um design moderno e responsivo, o site garante uma navegação fluida e uma apresentação atraente do menu, ideal para cativar clientes e promover suas delícias culinárias.",
       imgSrc: RestauranteImage,
       linkSite: "https://restaurante-weld.vercel.app/",
       linkGithub: "https://github.com/rodrigao-sp/restaurante",
@@ -33,7 +34,7 @@ const Projects = () => {
       titulo: "Clone Disney+",
       categoria: "sites",
       descricao:
-        "Clone do Disney+ recriado com HTML, CSS, Gulp e SCSS, focando em otimização de performance e estilização modular. O projeto é responsivo e espelha a estrutura visual e funcional do original.",
+        "Clone da plataforma Disney+, recriado com HTML, CSS, Gulp e SCSS, focando na otimização de desempenho e estilização modular. Este projeto responsivo espelha a estrutura visual e funcional do original, oferecendo aos usuários uma experiência de streaming familiar.",
       imgSrc: CloneDisneyImage,
       linkSite: "https://clone-disneyplus-omega-gules.vercel.app/",
       linkGithub: "https://github.com/rodrigao-sp/clone_disneyplus",
@@ -42,16 +43,25 @@ const Projects = () => {
       titulo: "Aplicação de Tarefas",
       categoria: "aplicacoes",
       descricao:
-        "Aplicação de gerenciamento de tarefas desenvolvida em React com Styled Components. Permite criar, editar e excluir tarefas de forma prática, com um design moderno e responsivo.",
+        "Uma aplicação para gerenciamento de tarefas, desenvolvida em React com Styled Components. Permite aos usuários criar, editar e excluir tarefas de maneira prática, combinando um design moderno e responsivo que facilita o acompanhamento de atividades diárias.",
       imgSrc: TarefasImage,
-      linkSite: "https://aplicacao-tarefas.vercel.app/",
-      linkGithub: "https://github.com/rodrigao-sp/aplicacao_tarefas",
+      linkSite: "https://minhas-tarefas-taupe-five.vercel.app/",
+      linkGithub: "https://github.com/rodrigao-sp/minhas-tarefas",
+    },
+    {
+      titulo: "Agenda de Contatos",
+      categoria: "aplicacoes",
+      descricao:
+        "Uma aplicação intuitiva para gerenciamento de contatos, permitindo aos usuários adicionar, editar e excluir informações de forma rápida e eficiente. O design responsivo e amigável garante uma experiência fluida em qualquer dispositivo.",
+      imgSrc: AgendaImage,
+      linkSite: "https://agenda-de-contatos-lovat-eight.vercel.app/",
+      linkGithub: "https://github.com/rodrigao-sp/agenda_de_contatos",
     },
     {
       titulo: "Calculadora de Médias",
       categoria: "aplicacoes",
       descricao:
-        "Aplicação web para cálculo de médias de notas, desenvolvida com HTML, CSS e JavaScript. Oferece interface intuitiva e cálculos dinâmicos em tempo real.",
+        "Uma aplicação web para cálculo de médias de notas, desenvolvida com HTML, CSS e JavaScript. A interface intuitiva e os cálculos dinâmicos em tempo real proporcionam uma experiência interativa e útil para estudantes e educadores.",
       imgSrc: CalculadoraImage,
       linkSite: "https://projeto-calculadora-medias-inky-seven.vercel.app/",
       linkGithub: "https://github.com/rodrigao-sp/projeto_calculadora_medias",
