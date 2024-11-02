@@ -96,115 +96,7 @@ Error generating stack: `+o.message+`
   &:hover {
     filter: brightness(1.2);
   }
-`,Dh=Dt.footer`
-  padding: 100px;
-  background-color: ${D.secondaryBackground};
-  color: #fff;
-  height: auto;
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    gap: 24px;
-  }
-
-  h3 {
-    margin-bottom: 16px;
-    font-size: 1.2rem;
-  }
-
-  ul li {
-    margin: 8px 0;
-  }
-
-  ul li a {
-    color: ${D.secondaryText};
-    transition: color 0.3s ease;
-  }
-
-  ul li a:hover {
-    color: #fff;
-  }
-
-  button {
-    background-color: transparent;
-    color: ${D.secondaryText};
-
-    &:hover {
-      color: ${D.primaryText};
-    }
-  }
-
-  .links,
-  .contact,
-  .social-buttons {
-    flex: 1;
-    text-align: start;
-  }
-
-  .social-buttons {
-    display: flex;
-  }
-
-  .footer-bottom {
-    margin-top: 60px;
-    font-size: 0.8em;
-  }
-`,Mh=()=>g.jsx(Dh,{children:g.jsxs("div",{className:"container",children:[g.jsxs("div",{className:"footer-content",children:[g.jsxs("div",{className:"links",children:[g.jsx("h3",{children:"Navegação"}),g.jsxs("ul",{children:[g.jsx("li",{children:g.jsx("a",{href:"#Inicio",children:"Inicio"})}),g.jsx("li",{children:g.jsx("a",{href:"#Qualidades",children:"Qualidades"})}),g.jsx("li",{children:g.jsx("a",{href:"#Projetos",children:"Projetos"})}),g.jsx("li",{children:g.jsx("a",{href:"#Contato",children:"Contato"})})]})]}),g.jsxs("div",{className:"contact",children:[g.jsx("h3",{children:"Contato"}),g.jsx("p",{children:"Email: rodrigodasilvapires@gmail.com"}),g.jsx("p",{children:"Telefone: (16) 99244-5497"}),g.jsx("p",{children:"Residente em: Franca, SP"})]}),g.jsxs("div",{className:"social",children:[g.jsx("h3",{children:"Social"}),g.jsxs("div",{className:"social-buttons",children:[g.jsx(Le,{className:"github","aria-label":"GitHub",onClick:()=>window.open("https://github.com/rodrigao-sp","_blank"),children:g.jsx("i",{className:"fa-brands fa-github"})}),g.jsx(Le,{className:"linkedin","aria-label":"LinkedIn",onClick:()=>window.open("https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/","_blank"),children:g.jsx("i",{className:"fa-brands fa-linkedin"})}),g.jsx(Le,{className:"whatsapp","aria-label":"WhatsApp",onClick:()=>window.open("https://wa.me/16992445497?text=Olá","_blank"),children:g.jsx("i",{className:"fa-brands fa-whatsapp"})}),g.jsx(Le,{className:"email","aria-label":"Email",onClick:()=>window.open("mailto:rodrigodasilvapires@gmail.com","_blank"),children:g.jsx("i",{className:"fa-solid fa-envelope"})})]})]})]}),g.jsx("div",{className:"footer-bottom",children:g.jsxs("p",{children:["© ",new Date().getFullYear()," Rodrigo da Silva Pires. Todos os direitos reservados."]})})]})}),Fh=Dt.div`
-  padding: 100px;
-  background-color: ${D.primaryBackground};
-  width: 100%;
-  min-height: 768px;
-
-  .container {
-    display: flex;
-    width: 600px;
-    flex-direction: column;
-  }
-
-  .content {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    border-radius: 8px;
-    font-size: 1rem;
-  }
-
-  textarea {
-    padding: 24px;
-  }
-
-  button {
-    background-color: ${D.azul};
-  }
-
-  #formMessage {
-    margin-top: 24px;
-    text-align: center;
-  }
-`,Ah=()=>g.jsxs(Fh,{id:"Contato",children:[g.jsxs("div",{className:"container",children:[g.jsx("h2",{children:"Precisa de um desenvolvedor?"}),g.jsxs("form",{id:"contactForm",action:"mailto:rodrigodasilvapires@gmail.com",method:"post",encType:"text/plain",className:"form-container",children:[g.jsx("label",{htmlFor:"name",children:"Nome:"}),g.jsx("input",{type:"text",id:"name",name:"name",required:!0}),g.jsx("label",{htmlFor:"email",children:"E-mail:"}),g.jsx("input",{type:"email",id:"email",name:"email",required:!0}),g.jsx("label",{htmlFor:"phone",children:"Telefone:"}),g.jsx("input",{type:"tel",id:"phone",name:"phone",pattern:"[0-9]{10,11}",placeholder:"(XX) XXXXX-XXXX"}),g.jsx("label",{htmlFor:"message",children:"Mensagem:"}),g.jsx("textarea",{id:"message",name:"message",required:!0}),g.jsx(Le,{type:"submit",children:"Enviar"})]})]}),g.jsx("div",{id:"formMessage",style:{display:"none"},children:"Mensagem enviada com sucesso! Responderei o mais breve possível."})]}),Uh=Dt.header`
+`,Dh=Dt.header`
   background-color: rgba(20, 24, 27, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -304,7 +196,7 @@ Error generating stack: `+o.message+`
       margin-top: 16px;
     }
   }
-`,Bh=()=>g.jsx(Uh,{children:g.jsxs("div",{className:"container",children:[g.jsxs("div",{className:"logo",children:["Rodrigo ",g.jsx("span",{children:"S. Pires"})]}),g.jsx("nav",{className:"menu",children:g.jsxs("ul",{children:[g.jsx("li",{children:g.jsx("a",{href:"#Inicio",children:"Início"})}),g.jsx("li",{children:g.jsx("a",{href:"#Qualidades",children:"Qualidades"})}),g.jsx("li",{children:g.jsx("a",{href:"#Projetos",children:"Projetos"})}),g.jsx("li",{children:g.jsx("a",{href:"#Contato",children:"Contato"})})]})}),g.jsxs("div",{className:"social-buttons",children:[g.jsx(Le,{className:"whatsapp","aria-label":"WhatsApp",onClick:()=>window.open("https://wa.me/16992445497?text=Olá","_blank"),children:g.jsx("i",{className:"fa-brands fa-whatsapp"})}),g.jsx(Le,{className:"email","aria-label":"Email",onClick:()=>window.location.href="mailto:rodrigodasilvapires@gmail.com?subject=Assunto&body=Olá",children:g.jsx("i",{className:"fa-regular fa-envelope"})})]})]})}),Hh=Dt.div`
+`,Mh=()=>g.jsx(Dh,{children:g.jsxs("div",{className:"container",children:[g.jsxs("div",{className:"logo",children:["Rodrigo ",g.jsx("span",{children:"S. Pires"})]}),g.jsx("nav",{className:"menu",children:g.jsxs("ul",{children:[g.jsx("li",{children:g.jsx("a",{href:"#Inicio",children:"Início"})}),g.jsx("li",{children:g.jsx("a",{href:"#Qualidades",children:"Qualidades"})}),g.jsx("li",{children:g.jsx("a",{href:"#Projetos",children:"Projetos"})}),g.jsx("li",{children:g.jsx("a",{href:"#Contato",children:"Contato"})})]})}),g.jsxs("div",{className:"social-buttons",children:[g.jsx(Le,{className:"whatsapp","aria-label":"WhatsApp",onClick:()=>window.open("https://wa.me/16992445497?text=Olá","_blank"),children:g.jsx("i",{className:"fa-brands fa-whatsapp"})}),g.jsx(Le,{className:"email","aria-label":"Email",onClick:()=>window.location.href="mailto:rodrigodasilvapires@gmail.com?subject=Assunto&body=Olá",children:g.jsx("i",{className:"fa-regular fa-envelope"})})]})]})}),Fh=Dt.div`
   padding-top: 100px;
   background-color: ${D.secondaryBackground};
   width: 100%;
@@ -384,96 +276,7 @@ Error generating stack: `+o.message+`
     border-radius: 8px;
     opacity: 0.8;
   }
-`,Vh="/portfolio/assets/Perfil-b1m5ovy8.webp",Wh=()=>g.jsx(Hh,{id:"Inicio",children:g.jsx("div",{className:"container",children:g.jsxs("div",{className:"content",children:[g.jsxs("div",{className:"txt",children:[g.jsxs("p",{children:["Olá,",g.jsx("br",{}),"Meu nome é Rodrigo, e sou um desenvolvedor",g.jsx("span",{children:" front-end"}),"."]}),g.jsxs("div",{className:"btns",children:[g.jsxs(Le,{onClick:()=>window.open("https://github.com/rodrigao-sp","_blank","noopener noreferrer"),className:"social-icon btn github","aria-label":"GitHub",children:[g.jsx("i",{className:"fab fa-github"}),g.jsx("span",{children:"GitHub"})]}),g.jsxs(Le,{onClick:()=>window.open("https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/","_blank","noopener noreferrer"),className:"social-icon btn linkedin","aria-label":"LinkedIn",children:[g.jsx("i",{className:"fa-brands fa-linkedin-in"}),g.jsx("span",{children:"LinkedIn"})]}),g.jsxs(Le,{onClick:()=>window.open("Currículo de Rodrigo da Silva Pires.pdf","_blank","noopener noreferrer"),className:"social-icon btn curriculo","aria-label":"Currículo",id:"curriculoBtn",children:[g.jsx("i",{className:"fa-regular fa-file"}),g.jsx("span",{children:"Currículo"})]})]})]}),g.jsx("div",{className:"image",children:g.jsx("img",{src:Vh,alt:"Foto de perfil de Rodrigo da Silva Pires"})})]})})}),Qh=Dt.div`
-  padding: 100px;
-  background-color: ${D.secondaryBackground};
-  width: 100%;
-  min-height: 768px;
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-  }
-
-  .filtros {
-    align-self: flex-start;
-    margin-bottom: 2rem;
-    display: flex;
-  }
-
-  .filtro {
-    background-color: transparent;
-    margin: 0 24px;
-    border: none;
-    color: ${D.secondaryText};
-    font-size: 1rem;
-    cursor: pointer;
-
-    &.ativo {
-      color: ${D.primaryText};
-      filter: brightness(1.2);
-    }
-
-    &:hover {
-      color: white;
-    }
-  }
-
-  .projeto {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(
-      to right,
-      ${D.secondaryBackground},
-      ${D.primaryBackground}
-    );
-
-    &:hover {
-      filter: brightness(1.2);
-    }
-
-    img {
-      width: 50%;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-right: 20px;
-    }
-
-    .projeto-conteudo {
-      flex: 1;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: flex-start;
-      flex-wrap: nowrap;
-
-      h3 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-      }
-
-      .btn-wrapper {
-        display: flex;
-        align-items: flex-end;
-        gap: 16px;
-      }
-
-      button {
-        background-color: ${D.azul};
-      }
-    }
-  }
-`,Gh="/portfolio/assets/Eplay-xdO6yemN.webp",Kh="/portfolio/assets/Tarefas-pIMM_GU4.webp",Yh="/portfolio/assets/Calculadora-de-medias-KTjMxkL0.webp",Xh="/portfolio/assets/Restaurante-BsLwQsi6.webp",Zh="/portfolio/assets/Clone-disney-IGDsCf_e.webp",Jh="/portfolio/assets/Agenda-contatos-CCZ1OiQ5.webp",qh=()=>{const[e,t]=nn.useState("todos"),n=[{titulo:"Eplay - Loja de Jogos",categoria:"sites",descricao:"Uma loja virtual de jogos, desenvolvida com React e Styled Components, que se destaca pela sua integração com uma API para a listagem de produtos. A interface é responsiva e intuitiva, proporcionando uma experiência de usuário excepcional, onde cada jogador pode navegar e encontrar facilmente seus jogos favoritos.",imgSrc:Gh,linkSite:"https://eplay-ashen-one.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/eplay"},{titulo:"Restaurante",categoria:"sites",descricao:"Modelo de site para restaurante, criado com HTML, CSS e Bootstrap. Com um design moderno e responsivo, o site garante uma navegação fluida e uma apresentação atraente do menu, ideal para cativar clientes e promover suas delícias culinárias.",imgSrc:Xh,linkSite:"https://restaurante-weld.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/restaurante"},{titulo:"Clone Disney+",categoria:"sites",descricao:"Clone da plataforma Disney+, recriado com HTML, CSS, Gulp e SCSS, focando na otimização de desempenho e estilização modular. Este projeto responsivo espelha a estrutura visual e funcional do original, oferecendo aos usuários uma experiência de streaming familiar.",imgSrc:Zh,linkSite:"https://clone-disneyplus-omega-gules.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/clone_disneyplus"},{titulo:"Aplicação de Tarefas",categoria:"aplicacoes",descricao:"Uma aplicação para gerenciamento de tarefas, desenvolvida em React com Styled Components. Permite aos usuários criar, editar e excluir tarefas de maneira prática, combinando um design moderno e responsivo que facilita o acompanhamento de atividades diárias.",imgSrc:Kh,linkSite:"https://minhas-tarefas-taupe-five.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/minhas-tarefas"},{titulo:"Agenda de Contatos",categoria:"aplicacoes",descricao:"Uma aplicação intuitiva para gerenciamento de contatos, permitindo aos usuários adicionar, editar e excluir informações de forma rápida e eficiente. O design responsivo e amigável garante uma experiência fluida em qualquer dispositivo.",imgSrc:Jh,linkSite:"https://agenda-de-contatos-lovat-eight.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/agenda_de_contatos"},{titulo:"Calculadora de Médias",categoria:"aplicacoes",descricao:"Uma aplicação web para cálculo de médias de notas, desenvolvida com HTML, CSS e JavaScript. A interface intuitiva e os cálculos dinâmicos em tempo real proporcionam uma experiência interativa e útil para estudantes e educadores.",imgSrc:Yh,linkSite:"https://projeto-calculadora-medias-inky-seven.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/projeto_calculadora_medias"}],r=o=>{t(o)},i=o=>{window.open(o,"_blank")};return g.jsx(Qh,{id:"Projetos",children:g.jsxs("div",{className:"container",children:[g.jsx("h2",{children:"Projetos"}),g.jsxs("div",{className:"filtros",children:[g.jsx("button",{className:`filtro ${e==="todos"?"ativo":""}`,onClick:()=>r("todos"),children:"Todos"}),g.jsx("button",{className:`filtro ${e==="sites"?"ativo":""}`,onClick:()=>r("sites"),children:"Sites"}),g.jsx("button",{className:`filtro ${e==="aplicacoes"?"ativo":""}`,onClick:()=>r("aplicacoes"),children:"Aplicações Web"})]}),n.filter(o=>e==="todos"||o.categoria===e).map((o,l)=>g.jsxs("div",{className:"projeto para-aparecer",style:{display:"flex"},children:[g.jsx("img",{src:o.imgSrc,alt:`Visual do projeto ${o.titulo}`}),g.jsxs("div",{className:"projeto-conteudo",children:[g.jsx("h3",{children:o.titulo}),g.jsx("p",{children:o.descricao}),g.jsxs("div",{className:"btn-wrapper",children:[g.jsxs(Le,{onClick:()=>i(o.linkSite),children:[g.jsx("i",{className:"fa-solid fa-globe"}),"Visitar Site"]}),g.jsxs(Le,{onClick:()=>i(o.linkGithub),children:[g.jsx("i",{className:"fab fa-github"}),"Código Fonte"]})]})]})]},l))]})})},bh=Dt.div`
+`,Ah="/portfolio/assets/Perfil-b1m5ovy8.webp",Uh=()=>g.jsx(Fh,{id:"Inicio",children:g.jsx("div",{className:"container",children:g.jsxs("div",{className:"content",children:[g.jsxs("div",{className:"txt",children:[g.jsxs("p",{children:["Olá,",g.jsx("br",{}),"Meu nome é Rodrigo, e sou um desenvolvedor",g.jsx("span",{children:" front-end"}),"."]}),g.jsxs("div",{className:"btns",children:[g.jsxs(Le,{onClick:()=>window.open("https://github.com/rodrigao-sp","_blank","noopener noreferrer"),className:"social-icon btn github","aria-label":"GitHub",children:[g.jsx("i",{className:"fab fa-github"}),g.jsx("span",{children:"GitHub"})]}),g.jsxs(Le,{onClick:()=>window.open("https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/","_blank","noopener noreferrer"),className:"social-icon btn linkedin","aria-label":"LinkedIn",children:[g.jsx("i",{className:"fa-brands fa-linkedin-in"}),g.jsx("span",{children:"LinkedIn"})]}),g.jsxs(Le,{onClick:()=>window.open("Currículo de Rodrigo da Silva Pires.pdf","_blank","noopener noreferrer"),className:"social-icon btn curriculo","aria-label":"Currículo",id:"curriculoBtn",children:[g.jsx("i",{className:"fa-regular fa-file"}),g.jsx("span",{children:"Currículo"})]})]})]}),g.jsx("div",{className:"image",children:g.jsx("img",{src:Ah,alt:"Foto de perfil de Rodrigo da Silva Pires"})})]})})}),Bh=Dt.div`
   padding: 100px;
   background-color: ${D.primaryBackground};
   width: 100%;
@@ -636,4 +439,201 @@ Error generating stack: `+o.message+`
       right: -200px;
     }
   }
-`,e0=()=>g.jsxs(bh,{id:"Qualidades",children:[g.jsxs("div",{className:"container",children:[g.jsx("h2",{children:"Qualidades"}),g.jsx("p",{children:"Sou um desenvolvedor front-end apaixonado por inovação e tecnologia, com uma sólida trajetória em criar experiências web robustas e escaláveis. Minha especialidade inclui um profundo domínio de HTML, CSS e JavaScript, além de frameworks modernos como React, que me permitem desenvolver interfaces intuitivas e responsivas, sempre com as melhores práticas de mercado. Atualmente, estou expandindo minha expertise em Python, pois acredito no valor de encontrar soluções eficientes para problemas complexos. Com facilidade para trabalhar em equipe, sou movido pela troca de conhecimento e pela busca constante de aprimoramento, sempre visando entregar resultados excepcionais."}),g.jsx("div",{className:"icons",children:[{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",alt:"HTML5",tooltip:"HTML5"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",alt:"CSS3",tooltip:"CSS3"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",alt:"Python",tooltip:"Python"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",alt:"React",tooltip:"React"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",alt:"JavaScript",tooltip:"JavaScript"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",alt:"TypeScript",tooltip:"TypeScript"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",alt:"Sass",tooltip:"Sass"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",alt:"Docker",tooltip:"Docker"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",alt:"Redux",tooltip:"Redux"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg",alt:"Vue.js",tooltip:"Vue.js"},{src:"https://cdn.worldvectorlogo.com/logos/django.svg",alt:"Django",tooltip:"Django"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg",alt:"Gulp",tooltip:"Gulp"}].map((e,t)=>g.jsxs("div",{className:"icon-item",children:[g.jsx("img",{src:e.src,alt:e.alt}),g.jsx("div",{className:"tooltip",children:e.tooltip})]},t))}),g.jsx("h3",{children:"Especializações"})]}),g.jsx("div",{className:"wrapper",children:["Html","Css","JavaScript","React","Python","Bootstrap","Docker","Git"].map((e,t)=>g.jsx("div",{className:`itemLeft item${t+1}`,children:e},t))})]});function t0(){return g.jsxs(g.Fragment,{children:[g.jsx(Oh,{}),g.jsx(Bh,{}),g.jsx(Wh,{}),g.jsx(e0,{}),g.jsx(qh,{}),g.jsx(Ah,{}),g.jsx(Mh,{})]})}If(document.getElementById("root")).render(g.jsx(nn.StrictMode,{children:g.jsx(t0,{})}));
+`,Hh=()=>g.jsxs(Bh,{id:"Qualidades",children:[g.jsxs("div",{className:"container",children:[g.jsx("h2",{children:"Qualidades"}),g.jsx("p",{children:"Sou um desenvolvedor front-end apaixonado por inovação e tecnologia, com uma sólida trajetória em criar experiências web robustas e escaláveis. Minha especialidade inclui um profundo domínio de HTML, CSS e JavaScript, além de frameworks modernos como React, que me permitem desenvolver interfaces intuitivas e responsivas, sempre com as melhores práticas de mercado. Atualmente, estou expandindo minha expertise em Python, pois acredito no valor de encontrar soluções eficientes para problemas complexos. Com facilidade para trabalhar em equipe, sou movido pela troca de conhecimento e pela busca constante de aprimoramento, sempre visando entregar resultados excepcionais."}),g.jsx("div",{className:"icons",children:[{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",alt:"HTML5",tooltip:"HTML5"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",alt:"CSS3",tooltip:"CSS3"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",alt:"Python",tooltip:"Python"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",alt:"React",tooltip:"React"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",alt:"JavaScript",tooltip:"JavaScript"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",alt:"TypeScript",tooltip:"TypeScript"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",alt:"Sass",tooltip:"Sass"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",alt:"Docker",tooltip:"Docker"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",alt:"Redux",tooltip:"Redux"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg",alt:"Vue.js",tooltip:"Vue.js"},{src:"https://cdn.worldvectorlogo.com/logos/django.svg",alt:"Django",tooltip:"Django"},{src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg",alt:"Gulp",tooltip:"Gulp"}].map((e,t)=>g.jsxs("div",{className:"icon-item",children:[g.jsx("img",{src:e.src,alt:e.alt}),g.jsx("div",{className:"tooltip",children:e.tooltip})]},t))}),g.jsx("h3",{children:"Especializações"})]}),g.jsx("div",{className:"wrapper",children:["Html","Css","JavaScript","React","Python","Bootstrap","Docker","Git"].map((e,t)=>g.jsx("div",{className:`itemLeft item${t+1}`,children:e},t))})]}),Vh=Dt.div`
+  padding: 100px;
+  background-color: ${D.secondaryBackground};
+  width: 100%;
+  min-height: 768px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .filtros {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+    display: flex;
+  }
+
+  .filtro {
+    background-color: transparent;
+    margin: 0 24px;
+    border: none;
+    color: ${D.secondaryText};
+    font-size: 1rem;
+    cursor: pointer;
+
+    &.ativo {
+      color: ${D.primaryText};
+      filter: brightness(1.2);
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .projeto {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(
+      to right,
+      ${D.secondaryBackground},
+      ${D.primaryBackground}
+    );
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+
+    img {
+      width: 50%;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .projeto-conteudo {
+      flex: 1;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .btn-wrapper {
+        display: flex;
+        align-items: flex-end;
+        gap: 16px;
+      }
+
+      button {
+        background-color: ${D.azul};
+      }
+    }
+  }
+`,Wh="/portfolio/assets/Eplay-xdO6yemN.webp",Qh="/portfolio/assets/Tarefas-pIMM_GU4.webp",Gh="/portfolio/assets/Calculadora-de-medias-KTjMxkL0.webp",Kh="/portfolio/assets/Restaurante-BsLwQsi6.webp",Yh="/portfolio/assets/Clone-disney-IGDsCf_e.webp",Xh="/portfolio/assets/Agenda-contatos-CCZ1OiQ5.webp",Zh=()=>{const[e,t]=nn.useState("todos"),n=[{titulo:"Eplay - Loja de Jogos",categoria:"sites",descricao:"Uma loja virtual de jogos, desenvolvida com React e Styled Components, que se destaca pela sua integração com uma API para a listagem de produtos. A interface é responsiva e intuitiva, proporcionando uma experiência de usuário excepcional, onde cada jogador pode navegar e encontrar facilmente seus jogos favoritos.",imgSrc:Wh,linkSite:"https://eplay-ashen-one.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/eplay"},{titulo:"Restaurante",categoria:"sites",descricao:"Modelo de site para restaurante, criado com HTML, CSS e Bootstrap. Com um design moderno e responsivo, o site garante uma navegação fluida e uma apresentação atraente do menu, ideal para cativar clientes e promover suas delícias culinárias.",imgSrc:Kh,linkSite:"https://restaurante-weld.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/restaurante"},{titulo:"Clone Disney+",categoria:"sites",descricao:"Clone da plataforma Disney+, recriado com HTML, CSS, Gulp e SCSS, focando na otimização de desempenho e estilização modular. Este projeto responsivo espelha a estrutura visual e funcional do original, oferecendo aos usuários uma experiência de streaming familiar.",imgSrc:Yh,linkSite:"https://clone-disneyplus-omega-gules.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/clone_disneyplus"},{titulo:"Aplicação de Tarefas",categoria:"aplicacoes",descricao:"Uma aplicação para gerenciamento de tarefas, desenvolvida em React com Styled Components. Permite aos usuários criar, editar e excluir tarefas de maneira prática, combinando um design moderno e responsivo que facilita o acompanhamento de atividades diárias.",imgSrc:Qh,linkSite:"https://minhas-tarefas-taupe-five.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/minhas-tarefas"},{titulo:"Agenda de Contatos",categoria:"aplicacoes",descricao:"Uma aplicação intuitiva para gerenciamento de contatos, permitindo aos usuários adicionar, editar e excluir informações de forma rápida e eficiente. O design responsivo e amigável garante uma experiência fluida em qualquer dispositivo.",imgSrc:Xh,linkSite:"https://agenda-de-contatos-lovat-eight.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/agenda_de_contatos"},{titulo:"Calculadora de Médias",categoria:"aplicacoes",descricao:"Uma aplicação web para cálculo de médias de notas, desenvolvida com HTML, CSS e JavaScript. A interface intuitiva e os cálculos dinâmicos em tempo real proporcionam uma experiência interativa e útil para estudantes e educadores.",imgSrc:Gh,linkSite:"https://projeto-calculadora-medias-inky-seven.vercel.app/",linkGithub:"https://github.com/rodrigao-sp/projeto_calculadora_medias"}],r=o=>{t(o)},i=o=>{window.open(o,"_blank")};return g.jsx(Vh,{id:"Projetos",children:g.jsxs("div",{className:"container",children:[g.jsx("h2",{children:"Projetos"}),g.jsxs("div",{className:"filtros",children:[g.jsx("button",{className:`filtro ${e==="todos"?"ativo":""}`,onClick:()=>r("todos"),children:"Todos"}),g.jsx("button",{className:`filtro ${e==="sites"?"ativo":""}`,onClick:()=>r("sites"),children:"Sites"}),g.jsx("button",{className:`filtro ${e==="aplicacoes"?"ativo":""}`,onClick:()=>r("aplicacoes"),children:"Aplicações Web"})]}),n.filter(o=>e==="todos"||o.categoria===e).map((o,l)=>g.jsxs("div",{className:"projeto para-aparecer",style:{display:"flex"},children:[g.jsx("img",{src:o.imgSrc,alt:`Visual do projeto ${o.titulo}`}),g.jsxs("div",{className:"projeto-conteudo",children:[g.jsx("h3",{children:o.titulo}),g.jsx("p",{children:o.descricao}),g.jsxs("div",{className:"btn-wrapper",children:[g.jsxs(Le,{onClick:()=>i(o.linkSite),children:[g.jsx("i",{className:"fa-solid fa-globe"}),"Visitar Site"]}),g.jsxs(Le,{onClick:()=>i(o.linkGithub),children:[g.jsx("i",{className:"fab fa-github"}),"Código Fonte"]})]})]})]},l))]})})},Jh=Dt.div`
+  padding: 100px;
+  background-color: ${D.primaryBackground};
+  width: 100%;
+  min-height: 768px;
+
+  .container {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  textarea {
+    padding: 24px;
+  }
+
+  button {
+    background-color: ${D.azul};
+  }
+
+  #formMessage {
+    margin-top: 24px;
+    text-align: center;
+  }
+`,qh=()=>g.jsxs(Jh,{id:"Contato",children:[g.jsxs("div",{className:"container",children:[g.jsx("h2",{children:"Precisa de um desenvolvedor?"}),g.jsxs("form",{id:"contactForm",action:"mailto:rodrigodasilvapires@gmail.com",method:"post",encType:"text/plain",className:"form-container",children:[g.jsx("label",{htmlFor:"name",children:"Nome:"}),g.jsx("input",{type:"text",id:"name",name:"name",required:!0}),g.jsx("label",{htmlFor:"email",children:"E-mail:"}),g.jsx("input",{type:"email",id:"email",name:"email",required:!0}),g.jsx("label",{htmlFor:"phone",children:"Telefone:"}),g.jsx("input",{type:"tel",id:"phone",name:"phone",pattern:"[0-9]{10,11}",placeholder:"(XX) XXXXX-XXXX"}),g.jsx("label",{htmlFor:"message",children:"Mensagem:"}),g.jsx("textarea",{id:"message",name:"message",required:!0}),g.jsx(Le,{type:"submit",children:"Enviar"})]})]}),g.jsx("div",{id:"formMessage",style:{display:"none"},children:"Mensagem enviada com sucesso! Responderei o mais breve possível."})]}),bh=Dt.footer`
+  padding: 100px;
+  background-color: ${D.secondaryBackground};
+  color: #fff;
+  height: auto;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+  }
+
+  h3 {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+  }
+
+  ul li {
+    margin: 8px 0;
+  }
+
+  ul li a {
+    color: ${D.secondaryText};
+    transition: color 0.3s ease;
+  }
+
+  ul li a:hover {
+    color: #fff;
+  }
+
+  button {
+    background-color: transparent;
+    color: ${D.secondaryText};
+
+    &:hover {
+      color: ${D.primaryText};
+    }
+  }
+
+  .links,
+  .contact,
+  .social-buttons {
+    flex: 1;
+    text-align: start;
+  }
+
+  .social-buttons {
+    display: flex;
+  }
+
+  .footer-bottom {
+    margin-top: 60px;
+    font-size: 0.8em;
+  }
+`,e0=()=>g.jsx(bh,{children:g.jsxs("div",{className:"container",children:[g.jsxs("div",{className:"footer-content",children:[g.jsxs("div",{className:"links",children:[g.jsx("h3",{children:"Navegação"}),g.jsxs("ul",{children:[g.jsx("li",{children:g.jsx("a",{href:"#Inicio",children:"Inicio"})}),g.jsx("li",{children:g.jsx("a",{href:"#Qualidades",children:"Qualidades"})}),g.jsx("li",{children:g.jsx("a",{href:"#Projetos",children:"Projetos"})}),g.jsx("li",{children:g.jsx("a",{href:"#Contato",children:"Contato"})})]})]}),g.jsxs("div",{className:"contact",children:[g.jsx("h3",{children:"Contato"}),g.jsx("p",{children:"Email: rodrigodasilvapires@gmail.com"}),g.jsx("p",{children:"Telefone: (16) 99244-5497"}),g.jsx("p",{children:"Residente em: Franca, SP"})]}),g.jsxs("div",{className:"social",children:[g.jsx("h3",{children:"Social"}),g.jsxs("div",{className:"social-buttons",children:[g.jsx(Le,{className:"github","aria-label":"GitHub",onClick:()=>window.open("https://github.com/rodrigao-sp","_blank"),children:g.jsx("i",{className:"fa-brands fa-github"})}),g.jsx(Le,{className:"linkedin","aria-label":"LinkedIn",onClick:()=>window.open("https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/","_blank"),children:g.jsx("i",{className:"fa-brands fa-linkedin"})}),g.jsx(Le,{className:"whatsapp","aria-label":"WhatsApp",onClick:()=>window.open("https://wa.me/16992445497?text=Olá","_blank"),children:g.jsx("i",{className:"fa-brands fa-whatsapp"})}),g.jsx(Le,{className:"email","aria-label":"Email",onClick:()=>window.open("mailto:rodrigodasilvapires@gmail.com","_blank"),children:g.jsx("i",{className:"fa-solid fa-envelope"})})]})]})]}),g.jsx("div",{className:"footer-bottom",children:g.jsxs("p",{children:["© ",new Date().getFullYear()," Rodrigo da Silva Pires. Todos os direitos reservados."]})})]})});If(document.getElementById("root")).render(g.jsxs(nn.StrictMode,{children:[g.jsx(Oh,{}),g.jsx(Mh,{}),g.jsx(Uh,{}),g.jsx(Hh,{}),g.jsx(Zh,{}),g.jsx(qh,{}),g.jsx(e0,{})]}));
