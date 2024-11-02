@@ -11,7 +11,7 @@ const Intro = () => (
             Olá,
             <br />
             Meu nome é Rodrigo, e sou um desenvolvedor
-            <span> front-end</span>.
+            <span> Front-end</span>.
           </p>
           <div className="btns">
             <ButtonCss
