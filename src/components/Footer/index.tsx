@@ -56,7 +56,11 @@ const Footer = () => (
                 aria-label={label}
                 onClick={() => window.open(url, "_blank")}
               >
-                <i className={`fa-brands fa-${icon}`} />
+                <i
+                  className={`fa-${
+                    icon === "envelope" ? "solid" : "brands"
+                  } fa-${icon}`}
+                />
               </ButtonCss>
             ))}
           </div>
