@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ProjectsCss } from "./styles";
+import CosmoImage from "../../assets/images/cosmoexplorer.webp";
 import EplayImage from "../../assets/images/Eplay.webp";
 import TarefasImage from "../../assets/images/Tarefas.webp";
 import CalculadoraImage from "../../assets/images/Calculadora-de-medias.webp";
@@ -12,6 +13,15 @@ const Projects = () => {
   const [categoriaAtiva, setCategoriaAtiva] = useState("todos");
 
   const projetos = [
+    {
+      titulo: "Cosmoexplorer",
+      categoria: "sites",
+      descricao:
+        "Meu primeiro projeto pessoal sobre astronomia e assuntos relacionados ao espaço. Desenvolvido em vite React e TypeScript, o site explora temas como foguetes, explorações espaciais e viagens pelo universo.",
+      imgSrc: CosmoImage,
+      linkSite: "https://www.cosmoexplorer.com.br/",
+      linkGithub: "https://github.com/rodrigao-sp/cosmoexplorer",
+    },
     {
       titulo: "Eplay - Loja de Jogos",
       categoria: "sites",
