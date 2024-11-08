@@ -2,8 +2,19 @@ import { IntroCss } from "./styles";
 import PerfilImage from "../../assets/images/Perfil.webp";
 import { ButtonCss } from "../../styles";
 
+// URLs externas centralizadas em constantes
+const GITHUB_URL = "https://github.com/rodrigao-sp";
+const LINKEDIN_URL =
+  "https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/";
+const CURRICULO_URL = "";
+
+// Função utilitária para abrir links em uma nova aba
+const openInNewTab = (url: string | URL | undefined) => {
+  window.open(url, "_blank", "noopener noreferrer");
+};
+
 const Intro = () => (
-  <IntroCss id="Inicio">
+  <IntroCss id="Início">
     <div className="container">
       <div className="content">
         <div className="txt">
@@ -15,13 +26,7 @@ const Intro = () => (
           </p>
           <div className="btns">
             <ButtonCss
-              onClick={() =>
-                window.open(
-                  "https://github.com/rodrigao-sp",
-                  "_blank",
-                  "noopener noreferrer"
-                )
-              }
+              onClick={() => openInNewTab(GITHUB_URL)}
               className="social-icon btn github"
               aria-label="GitHub"
             >
@@ -29,13 +34,7 @@ const Intro = () => (
               <span>GitHub</span>
             </ButtonCss>
             <ButtonCss
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/",
-                  "_blank",
-                  "noopener noreferrer"
-                )
-              }
+              onClick={() => openInNewTab(LINKEDIN_URL)}
               className="social-icon btn linkedin"
               aria-label="LinkedIn"
             >
@@ -43,13 +42,7 @@ const Intro = () => (
               <span>LinkedIn</span>
             </ButtonCss>
             <ButtonCss
-              onClick={() =>
-                window.open(
-                  "Currículo de Rodrigo da Silva Pires.pdf",
-                  "_blank",
-                  "noopener noreferrer"
-                )
-              }
+              onClick={() => openInNewTab(CURRICULO_URL)}
               className="social-icon btn curriculo"
               aria-label="Currículo"
               id="curriculoBtn"

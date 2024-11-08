@@ -2,18 +2,16 @@ import styled from "styled-components";
 import { Cores } from "../../styles";
 
 export const QualitiesCss = styled.div`
-  padding: 100px;
+  padding-top: 100px;
   background-color: ${Cores.primaryBackground};
   width: 100%;
-  min-height: 768px;
+  height: 100vh;
 
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
     text-align: center;
   }
 

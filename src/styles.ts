@@ -18,10 +18,6 @@ export const GlobalCSs = createGlobalStyle`
         font-family: Poppins, sans-serif;
         list-style: none;
         text-decoration: none;
-
-        @media (max-width: 768px) {
-          display: none;
-        }
     }
 
     body {
@@ -31,7 +27,6 @@ export const GlobalCSs = createGlobalStyle`
     }
 
     h2 {
-        padding-top: 50px;
         text-align: center;
         margin-bottom: 24px;
         font-size: 2rem;
@@ -54,13 +49,13 @@ export const ButtonCss = styled.button`
   background-color: ${Cores.secondaryBackground};
   border: none;
   border-radius: 8px;
-  font-size: 16px;
   display: flex;
   align-items: center;
   height: 50px;
   cursor: pointer;
-  transition: background-color 0.3s ease, filter 0.3s ease;
+  font-size: 16px;
   padding: 8px 16px;
+  transition: background-color 0.3s ease, filter 0.3s ease;
 
   i {
     font-size: 1.3rem;

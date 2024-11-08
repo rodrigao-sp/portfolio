@@ -5,7 +5,7 @@ export const IntroCss = styled.div`
   padding-top: 100px;
   background-color: ${Cores.secondaryBackground};
   width: 100%;
-  height: 768px;
+  height: 100vh;
 
   .container {
     width: 100%;
@@ -27,12 +27,12 @@ export const IntroCss = styled.div`
   p {
     font-size: 1.3rem;
     margin-bottom: 24px;
-  }
 
-  p span {
-    color: ${Cores.azul};
-    font-weight: bold;
-    font-size: xx-large;
+    span {
+      color: ${Cores.azul};
+      font-weight: bold;
+      font-size: xx-large;
+    }
   }
 
   .btns {
@@ -40,45 +40,40 @@ export const IntroCss = styled.div`
     flex-direction: row;
     gap: 16px;
     margin-top: 16px;
-  }
 
-  .github {
-    background-color: #333;
-
-    &:hover {
-      filter: brightness(1.2);
+    .github {
+      background-color: #333;
     }
-  }
 
-  .linkedin {
-    background-color: #0073b1;
-
-    &:hover {
-      filter: brightness(1.2);
+    .linkedin {
+      background-color: #0073b1;
     }
-  }
 
-  .curriculo {
-    background-color: #4caf50;
-
-    &:hover {
-      filter: brightness(1.2);
+    .curriculo {
+      background-color: #4caf50;
     }
-  }
 
-  .btn i {
-    font-size: 20px;
+    .github,
+    .linkedin,
+    .curriculo {
+      &:hover {
+        filter: brightness(1.2);
+      }
+    }
+
+    .btn i {
+      font-size: 20px;
+    }
   }
 
   .image {
     flex-shrink: 0;
-  }
 
-  .image img {
-    margin-top: 30px;
-    width: 345px;
-    height: 645px;
-    border-radius: 8px;
-    opacity: 0.8;
+    img {
+      width: 345px;
+      height: 645px;
+      border-radius: 8px;
+      opacity: 0.8;
+    }
   }
 `;

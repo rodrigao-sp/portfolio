@@ -4,8 +4,6 @@ import { Cores } from "../../styles";
 export const FooterCss = styled.footer`
   padding: 100px;
   background-color: ${Cores.secondaryBackground};
-  color: #fff;
-  height: auto;
 
   .container {
     display: flex;
@@ -18,7 +16,6 @@ export const FooterCss = styled.footer`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     gap: 24px;
   }
 
@@ -34,10 +31,10 @@ export const FooterCss = styled.footer`
   ul li a {
     color: ${Cores.secondaryText};
     transition: color 0.3s ease;
-  }
 
-  ul li a:hover {
-    color: #fff;
+    &:hover {
+      color: #fff;
+    }
   }
 
   button {
@@ -58,6 +55,7 @@ export const FooterCss = styled.footer`
 
   .social-buttons {
     display: flex;
+    gap: 16px;
   }
 
   .footer-bottom {

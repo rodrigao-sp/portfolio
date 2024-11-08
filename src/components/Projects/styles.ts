@@ -5,7 +5,7 @@ export const ProjectsCss = styled.div`
   padding: 100px;
   background-color: ${Cores.secondaryBackground};
   width: 100%;
-  min-height: 768px;
+  min-height: 100vh;
 
   .container {
     display: flex;
@@ -20,15 +20,16 @@ export const ProjectsCss = styled.div`
     align-self: flex-start;
     margin-bottom: 2rem;
     display: flex;
+    gap: 24px;
   }
 
   .filtro {
     background-color: transparent;
-    margin: 0 24px;
     border: none;
     color: ${Cores.secondaryText};
     font-size: 1rem;
     cursor: pointer;
+    transition: color 0.2s, filter 0.2s;
 
     &.ativo {
       color: ${Cores.primaryText};
@@ -42,7 +43,6 @@ export const ProjectsCss = styled.div`
 
   .projeto {
     display: flex;
-    flex-direction: row;
     margin-bottom: 20px;
     width: 100%;
     padding: 10px;
@@ -53,6 +53,7 @@ export const ProjectsCss = styled.div`
       ${Cores.secondaryBackground},
       ${Cores.primaryBackground}
     );
+    transition: filter 0.3s ease-in-out;
 
     &:hover {
       filter: brightness(1.2);
@@ -70,9 +71,7 @@ export const ProjectsCss = styled.div`
       text-align: left;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      align-items: flex-start;
-      flex-wrap: nowrap;
+      justify-content: space-between;
 
       h3 {
         font-size: 1.5rem;
@@ -81,12 +80,12 @@ export const ProjectsCss = styled.div`
 
       .btn-wrapper {
         display: flex;
-        align-items: flex-end;
         gap: 16px;
       }
 
       button {
         background-color: ${Cores.azul};
+        transition: background-color 0.3s ease;
       }
     }
   }

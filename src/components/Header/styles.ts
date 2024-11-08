@@ -22,6 +22,7 @@ export const HeaderBar = styled.header`
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    cursor: pointer;
     transition: color 0.2s ease, filter 0.2s ease;
 
     &:hover {
@@ -37,29 +38,45 @@ export const HeaderBar = styled.header`
     flex: 1;
     display: flex;
     justify-content: center;
-  }
+    cursor: pointer;
 
-  .menu ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-  }
+    ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      flex-direction: row;
 
-  .menu a {
-    font-size: 1rem;
-    color: ${Cores.secondaryText};
-    margin: 0 24px;
-    transition: color 0.2s ease, filter 0.2s ease;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
 
-    &:hover {
-      color: ${Cores.primaryText};
-      filter: brightness(1.2);
+    a {
+      font-size: 1rem;
+      color: ${Cores.secondaryText};
+      margin: 0 24px;
+      transition: color 0.2s ease, filter 0.2s ease;
+
+      &:hover {
+        color: ${Cores.primaryText};
+        filter: brightness(1.2);
+      }
+
+      @media (max-width: 768px) {
+        margin: 8px 0;
+      }
     }
   }
 
   .social-buttons {
     gap: 16px;
     display: inline-flex;
+    margin-top: 0;
+
+    @media (max-width: 768px) {
+      margin-top: 16px;
+    }
   }
 
   button {
@@ -71,34 +88,13 @@ export const HeaderBar = styled.header`
       width: 50px;
       height: 50px;
     }
-  }
 
-  .whatsapp {
-    background-color: ${Cores.whatsapp};
-  }
-
-  .email {
-    background-color: ${Cores.email};
-  }
-
-  /* Responsividade para telas menores */
-  @media (max-width: 768px) {
-    .menu ul {
-      flex-direction: column;
-      align-items: center;
+    &.whatsapp {
+      background-color: ${Cores.whatsapp};
     }
 
-    .menu a {
-      margin: 8px 0;
-    }
-
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .social-buttons {
-      margin-top: 16px;
+    &.email {
+      background-color: ${Cores.email};
     }
   }
 `;

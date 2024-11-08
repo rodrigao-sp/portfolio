@@ -9,18 +9,11 @@ const Footer = () => (
         <div className="links">
           <h3>Navegação</h3>
           <ul>
-            <li>
-              <a href="#Inicio">Inicio</a>
-            </li>
-            <li>
-              <a href="#Qualidades">Qualidades</a>
-            </li>
-            <li>
-              <a href="#Projetos">Projetos</a>
-            </li>
-            <li>
-              <a href="#Contato">Contato</a>
-            </li>
+            {["Início", "Qualidades", "Projetos", "Contato"].map((item) => (
+              <li key={item}>
+                <a href={`#${item}`}>{item}</a>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -36,52 +29,36 @@ const Footer = () => (
         <div className="social">
           <h3>Social</h3>
           <div className="social-buttons">
-            {/* Botão para GitHub */}
-            <ButtonCss
-              className="github"
-              aria-label="GitHub"
-              onClick={() =>
-                window.open("https://github.com/rodrigao-sp", "_blank")
-              }
-            >
-              <i className="fa-brands fa-github"></i>
-            </ButtonCss>
-
-            {/* Botão para LinkedIn */}
-            <ButtonCss
-              className="linkedin"
-              aria-label="LinkedIn"
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/",
-                  "_blank"
-                )
-              }
-            >
-              <i className="fa-brands fa-linkedin"></i>
-            </ButtonCss>
-
-            {/* Botão para WhatsApp */}
-            <ButtonCss
-              className="whatsapp"
-              aria-label="WhatsApp"
-              onClick={() =>
-                window.open("https://wa.me/16992445497?text=Olá", "_blank")
-              }
-            >
-              <i className="fa-brands fa-whatsapp"></i>
-            </ButtonCss>
-
-            {/* Botão para E-mail */}
-            <ButtonCss
-              className="email"
-              aria-label="Email"
-              onClick={() =>
-                window.open("mailto:rodrigodasilvapires@gmail.com", "_blank")
-              }
-            >
-              <i className="fa-solid fa-envelope"></i>
-            </ButtonCss>
+            {[
+              {
+                label: "GitHub",
+                url: "https://github.com/rodrigao-sp",
+                icon: "github",
+              },
+              {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/",
+                icon: "linkedin",
+              },
+              {
+                label: "WhatsApp",
+                url: "https://wa.me/16992445497?text=Olá",
+                icon: "whatsapp",
+              },
+              {
+                label: "Email",
+                url: "mailto:rodrigodasilvapires@gmail.com",
+                icon: "envelope",
+              },
+            ].map(({ label, url, icon }) => (
+              <ButtonCss
+                key={label}
+                aria-label={label}
+                onClick={() => window.open(url, "_blank")}
+              >
+                <i className={`fa-brands fa-${icon}`} />
+              </ButtonCss>
+            ))}
           </div>
         </div>
       </div>

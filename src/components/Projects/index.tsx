@@ -68,39 +68,33 @@ const Projects = () => {
     },
   ];
 
-  const filtrarProjetos = (categoria: React.SetStateAction<string>) => {
+  const filtrarProjetos = (categoria: React.SetStateAction<string>) =>
     setCategoriaAtiva(categoria);
-  };
 
-  const handleButtonClick = (url: string) => {
+  const handleButtonClick = (url: string | URL | undefined) => {
     window.open(url, "_blank");
   };
+
+  const categorias = [
+    { nome: "todos", label: "Todos" },
+    { nome: "sites", label: "Sites" },
+    { nome: "aplicacoes", label: "Aplicações Web" },
+  ];
 
   return (
     <ProjectsCss id="Projetos">
       <div className="container">
         <h2>Projetos</h2>
         <div className="filtros">
-          <button
-            className={`filtro ${categoriaAtiva === "todos" ? "ativo" : ""}`}
-            onClick={() => filtrarProjetos("todos")}
-          >
-            Todos
-          </button>
-          <button
-            className={`filtro ${categoriaAtiva === "sites" ? "ativo" : ""}`}
-            onClick={() => filtrarProjetos("sites")}
-          >
-            Sites
-          </button>
-          <button
-            className={`filtro ${
-              categoriaAtiva === "aplicacoes" ? "ativo" : ""
-            }`}
-            onClick={() => filtrarProjetos("aplicacoes")}
-          >
-            Aplicações Web
-          </button>
+          {categorias.map(({ nome, label }) => (
+            <button
+              key={nome}
+              className={`filtro ${categoriaAtiva === nome ? "ativo" : ""}`}
+              onClick={() => filtrarProjetos(nome)}
+            >
+              {label}
+            </button>
+          ))}
         </div>
 
         {projetos
@@ -109,11 +103,7 @@ const Projects = () => {
               categoriaAtiva === "todos" || projeto.categoria === categoriaAtiva
           )
           .map((projeto, index) => (
-            <div
-              key={index}
-              className="projeto para-aparecer"
-              style={{ display: "flex" }}
-            >
+            <div key={index} className="projeto para-aparecer">
               <img
                 src={projeto.imgSrc}
                 alt={`Visual do projeto ${projeto.titulo}`}
