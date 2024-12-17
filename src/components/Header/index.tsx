@@ -1,56 +1,65 @@
+import { useState } from "react";
 import { ButtonCss } from "../../styles";
 import { HeaderBar } from "./styles";
 import { Link } from "react-scroll";
+import Modal from "../Modal";
 
-const handleWhatsAppClick = () => {
-  window.open("https://wa.me/16992445497?text=Olá", "_blank");
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <>
+      <HeaderBar>
+        <div className="container">
+          <div className="logo">
+            Rodrigo <span>S. Pires</span>
+          </div>
+
+          <div className="menu-toggle" onClick={toggleMenu}>
+            <i className={`fas fa-${isMenuOpen ? "times" : "bars"}`}></i>
+          </div>
+
+          <nav className={`menu ${isMenuOpen ? "active" : ""}`}>
+            <ul>
+              {["Início", "Qualidades", "Projetos"].map((section, index) => (
+                <li key={index}>
+                  <Link
+                    to={section}
+                    smooth={true}
+                    duration={500}
+                    onClick={closeMenu}
+                  >
+                    {section}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="social-buttons">
+            <ButtonCss
+              className="contact-btn"
+              aria-label="Trabalhar Juntos"
+              onClick={() => setIsModalOpen(true)}
+            >
+              <i className="fa-solid fa-handshake"></i>
+              <span>Trabalhar Juntos</span>
+            </ButtonCss>
+          </div>
+        </div>
+      </HeaderBar>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
+  );
 };
-
-const handleEmailClick = () => {
-  window.location.href =
-    "mailto:rodrigodasilvapires@gmail.com?subject=Assunto&body=Olá";
-};
-
-const Header = () => (
-  <HeaderBar>
-    <div className="container">
-      <div className="logo">
-        Rodrigo <span>S. Pires</span>
-      </div>
-
-      <nav className="menu" role="navigation" aria-label="Main menu">
-        <ul>
-          {["Início", "Qualidades", "Projetos", "Contato"].map(
-            (section, index) => (
-              <li key={index}>
-                <Link to={section} smooth={true} duration={500}>
-                  {section}
-                </Link>
-              </li>
-            )
-          )}
-        </ul>
-      </nav>
-
-      <div className="social-buttons">
-        <ButtonCss
-          className="whatsapp"
-          aria-label="WhatsApp link"
-          onClick={handleWhatsAppClick}
-        >
-          <i className="fa-brands fa-whatsapp"></i>
-        </ButtonCss>
-
-        <ButtonCss
-          className="email"
-          aria-label="Email link"
-          onClick={handleEmailClick}
-        >
-          <i className="fa-regular fa-envelope"></i>
-        </ButtonCss>
-      </div>
-    </div>
-  </HeaderBar>
-);
 
 export default Header;

@@ -1,81 +1,112 @@
 import { ButtonCss } from "../../styles";
 import { FooterCss } from "./styles";
 
-const Footer = () => (
-  <FooterCss>
-    <div className="container">
-      <div className="footer-content">
-        {/* Links de navegação */}
-        <div className="links">
-          <h3>Navegação</h3>
-          <ul>
-            {["Início", "Qualidades", "Projetos", "Contato"].map((item) => (
-              <li key={item}>
-                <a href={`#${item}`}>{item}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
 
-        {/* Seção de contato */}
-        <div className="contact">
-          <h3>Contato</h3>
-          <p>Email: rodrigodasilvapires@gmail.com</p>
-          <p>Telefone: (16) 99244-5497</p>
-          <p>Residente em: Franca, SP</p>
-        </div>
+  const socialLinks = [
+    {
+      name: "GitHub",
+      url: "https://github.com/rodrigao-sp",
+      icon: "github",
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/",
+      icon: "linkedin",
+    },
+    {
+      name: "WhatsApp",
+      url: "https://wa.me/16992445497?text=Olá",
+      icon: "whatsapp",
+    },
+  ];
 
-        {/* Seção de redes sociais */}
-        <div className="social">
-          <h3>Social</h3>
-          <div className="social-buttons">
-            {[
-              {
-                label: "GitHub",
-                url: "https://github.com/rodrigao-sp",
-                icon: "github",
-              },
-              {
-                label: "LinkedIn",
-                url: "https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/",
-                icon: "linkedin",
-              },
-              {
-                label: "WhatsApp",
-                url: "https://wa.me/16992445497?text=Olá",
-                icon: "whatsapp",
-              },
-              {
-                label: "Email",
-                url: "mailto:rodrigodasilvapires@gmail.com",
-                icon: "envelope",
-              },
-            ].map(({ label, url, icon }) => (
-              <ButtonCss
-                key={label}
-                aria-label={label}
-                onClick={() => window.open(url, "_blank")}
-              >
-                <i
-                  className={`fa-${
-                    icon === "envelope" ? "solid" : "brands"
-                  } fa-${icon}`}
-                />
-              </ButtonCss>
-            ))}
+  const techIcons = [
+    {
+      name: "React",
+      icon: "fab fa-react",
+    },
+    {
+      name: "TypeScript",
+      icon: "devicon-typescript-plain",
+    },
+    {
+      name: "JavaScript",
+      icon: "fab fa-js",
+    },
+    {
+      name: "HTML5",
+      icon: "fab fa-html5",
+    },
+    {
+      name: "CSS3",
+      icon: "fab fa-css3-alt",
+    },
+    {
+      name: "SASS",
+      icon: "fab fa-sass",
+    },
+  ];
+
+  const navLinks = ["Início", "Qualidades", "Projetos"];
+
+  return (
+    <FooterCss>
+      <div className="container">
+        <div className="footer-content">
+          <div className="links">
+            <h3>Navegação</h3>
+            <ul>
+              {navLinks.map((link) => (
+                <li key={link}>
+                  <a href={`#${link}`}>
+                    <i className="fas fa-chevron-right"></i>
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="footer-info">
+            <h3>Rodrigo S. Pires</h3>
+            <div className="social-buttons">
+              {socialLinks.map((link) => (
+                <ButtonCss
+                  key={link.name}
+                  onClick={() => window.open(link.url, "_blank")}
+                  aria-label={link.name}
+                  className={`social-btn ${link.icon}`}
+                >
+                  <i className={`fab fa-${link.icon}`}></i>
+                </ButtonCss>
+              ))}
+            </div>
+          </div>
+
+          <div className="tecnologias">
+            <h3>Tecnologias</h3>
+            <div className="tech-grid">
+              {techIcons.map((tech) => (
+                <span key={tech.name} className="tech-item">
+                  <i className={tech.icon}></i>
+                  <span className="tech-name">{tech.name}</span>
+                </span>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Mensagem de direitos autorais */}
-      <div className="footer-bottom">
-        <p>
-          &copy; {new Date().getFullYear()} Rodrigo da Silva Pires. Todos os
-          direitos reservados.
-        </p>
+        <div className="footer-bottom">
+          <p>
+            © {currentYear} Rodrigo da Silva Pires. Todos os direitos
+            reservados.
+          </p>
+        </div>
       </div>
-    </div>
-  </FooterCss>
-);
+    </FooterCss>
+  );
+};
 
 export default Footer;

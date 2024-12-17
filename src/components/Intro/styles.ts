@@ -1,79 +1,236 @@
 import styled from "styled-components";
-import { Cores } from "../../styles";
+import { Cores, breakpoints } from "../../styles";
+import { fadeIn } from "../../styles/animations";
 
-export const IntroCss = styled.div`
-  padding-top: 100px;
+export const IntroCss = styled.section`
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 0 0;
   background-color: ${Cores.secondaryBackground};
-  width: 100%;
-  height: 100vh;
+  position: relative;
+  overflow: hidden;
 
   .container {
+    position: relative;
+    z-index: 1;
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .content {
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    justify-content: space-between;
+    gap: 32px;
+    min-height: calc(100vh - 170px);
+
+    @media (max-width: ${breakpoints.tablet}) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
-  p {
-    font-size: 1.3rem;
-    margin-bottom: 24px;
+  .txt {
+    flex: 1;
+    animation: ${fadeIn} 0.8s ease-out;
 
-    span {
-      color: ${Cores.azul};
-      font-weight: bold;
-      font-size: xx-large;
+    p {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-bottom: 2rem;
+      line-height: 1.4;
+
+      .typing {
+        color: ${Cores.azul};
+        font-weight: 700;
+      }
+
+      .cursor {
+        animation: blink 1s infinite;
+        color: ${Cores.azul};
+      }
+    }
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
     }
   }
 
   .btns {
     display: flex;
-    flex-direction: row;
     gap: 16px;
-    margin-top: 16px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
     .github {
       background-color: #333;
+      &:hover {
+        background-color: #444;
+      }
     }
 
     .linkedin {
       background-color: #0073b1;
-    }
-
-    .curriculo {
-      background-color: #4caf50;
-    }
-
-    .github,
-    .linkedin,
-    .curriculo {
       &:hover {
-        filter: brightness(1.2);
+        background-color: #0077b5;
       }
     }
 
-    .btn i {
-      font-size: 20px;
+    .curriculo {
+      background-color: #2ecc71;
+      &:hover {
+        background-color: #27ae60;
+      }
+    }
+
+    .btn {
+      opacity: 0;
+      animation: ${fadeIn} 0.5s ease-out forwards;
+
+      &:nth-child(1) {
+        animation-delay: 0.4s;
+      }
+      &:nth-child(2) {
+        animation-delay: 0.6s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.8s;
+      }
     }
   }
 
   .image {
-    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    align-self: flex-end;
 
     img {
-      width: 345px;
-      height: 645px;
-      border-radius: 8px;
-      opacity: 0.8;
+      width: clamp(250px, 30vw, 345px);
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      margin-bottom: -4px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 40px 0;
+
+    .container {
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 20px;
+      align-items: center;
+    }
+
+    .image {
+      order: -1;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+      }
+    }
+
+    .txt {
+      text-align: center;
+      align-items: center;
+      order: 0;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+
+    .btns {
+      order: 1;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 20px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .container {
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .image {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+    }
+
+    .txt {
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        max-width: 280px;
+        margin: 0 auto;
+      }
+    }
+
+    .btns {
+      gap: 15px;
+
+      .btn {
+        padding: 10px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        span {
+          display: none;
+        }
+
+        i {
+          margin: 0;
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 `;

@@ -1,100 +1,124 @@
 import styled from "styled-components";
-import { Cores } from "../../styles";
+import { Cores, breakpoints } from "../../styles";
+import { slideInLeft, slideInRight } from "../../styles/animations";
 
 export const HeaderBar = styled.header`
-  background-color: rgba(20, 24, 27, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  width: 100%;
-  height: 100px;
-  padding: 24px;
   position: fixed;
-  z-index: 10;
-  transition: background-color 0.3s ease;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: ${Cores.primaryBackground};
+  height: 70px;
+  display: flex;
+  align-items: center;
 
   .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 0 20px;
   }
 
   .logo {
+    animation: ${slideInLeft} 0.6s ease-out;
     font-size: 1.5rem;
     font-weight: bold;
-    cursor: pointer;
-    transition: color 0.2s ease, filter 0.2s ease;
+    color: ${Cores.primaryText};
 
-    &:hover {
-      filter: brightness(1.2);
+    span {
+      color: ${Cores.azul};
     }
-  }
-
-  span {
-    color: ${Cores.azul};
   }
 
   .menu {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-
     ul {
       display: flex;
-      padding: 0;
-      margin: 0;
-      flex-direction: row;
+      gap: 32px;
+      list-style: none;
 
-      @media (max-width: 768px) {
+      li {
+        opacity: 0;
+        animation: ${slideInRight} 0.6s ease-out forwards;
+
+        a {
+          color: ${Cores.secondaryText};
+          text-decoration: none;
+          transition: color 0.3s ease;
+          cursor: pointer;
+
+          &:hover {
+            color: ${Cores.primaryText};
+          }
+        }
+      }
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    height: 60px;
+
+    .menu-toggle {
+      display: block;
+      background: none;
+      border: none;
+      color: ${Cores.primaryText};
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .menu {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: ${Cores.primaryBackground};
+      padding: 20px;
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+      &.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+
+      ul {
         flex-direction: column;
         align-items: center;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
       }
     }
 
-    a {
-      font-size: 1rem;
-      color: ${Cores.secondaryText};
-      margin: 0 24px;
-      transition: color 0.2s ease, filter 0.2s ease;
-
-      &:hover {
-        color: ${Cores.primaryText};
-        filter: brightness(1.2);
-      }
-
-      @media (max-width: 768px) {
-        margin: 8px 0;
-      }
+    .social-buttons {
+      display: none;
     }
   }
 
-  .social-buttons {
-    gap: 16px;
-    display: inline-flex;
-    margin-top: 0;
-
-    @media (max-width: 768px) {
-      margin-top: 16px;
-    }
-  }
-
-  button {
-    width: 40px;
-    height: 40px;
-    transition: background-color 0.2s ease;
-
-    @media (min-width: 768px) {
-      width: 50px;
-      height: 50px;
+  @media (max-width: ${breakpoints.mobile}) {
+    .container {
+      padding: 0 15px;
     }
 
-    &.whatsapp {
-      background-color: ${Cores.whatsapp};
+    .logo {
+      font-size: 1.1rem;
     }
 
-    &.email {
-      background-color: ${Cores.email};
+    .menu-toggle {
+      font-size: 1.2rem;
     }
   }
 `;
