@@ -145,7 +145,7 @@ export const ModalContent = styled.div`
     gap: 12px;
 
     .contact-card {
-      padding: 15px;
+      padding: 24px;
       border-radius: 8px;
       color: ${Cores.primaryText};
       background: ${Cores.secondaryBackground};
