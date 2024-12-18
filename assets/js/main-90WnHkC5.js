@@ -536,7 +536,7 @@ Error generating stack: `+i.message+`
     gap: 12px;
 
     .contact-card {
-      padding: 15px;
+      padding: 24px;
       border-radius: 8px;
       color: ${j.primaryText};
       background: ${j.secondaryBackground};
