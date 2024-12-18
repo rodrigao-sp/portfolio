@@ -1,4 +1,4 @@
-import { ButtonCss } from "../../styles";
+import { ButtonCss } from "../../styles/styles";
 import { FooterCss } from "./styles";
 
 const Footer = () => {

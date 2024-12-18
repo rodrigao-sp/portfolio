@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { GlobalCSs } from "./styles";
+import { GlobalCSs } from "./styles/styles";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Qualities from "./components/Qualities";

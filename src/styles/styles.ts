@@ -24,9 +24,6 @@ export const GlobalCSs = createGlobalStyle`
         font-family: Poppins, sans-serif;
         list-style: none;
         text-decoration: none;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        overflow-x: none;
     }
 
     html {

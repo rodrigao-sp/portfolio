@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { IntroCss } from "./styles";
 import PerfilImage from "../../assets/images/Perfil.webp";
-import { ButtonCss } from "../../styles";
+import { ButtonCss } from "../../styles/styles";
 
 const GITHUB_URL = "https://github.com/rodrigao-sp";
 const LINKEDIN_URL =

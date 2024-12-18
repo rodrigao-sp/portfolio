@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Cores, breakpoints } from "../../styles";
+import { Cores, breakpoints } from "../../styles/styles";
 import { fadeIn, float } from "../../styles/animations";
 
 export const FooterCss = styled.footer`

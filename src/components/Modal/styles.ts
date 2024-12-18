@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { Cores, breakpoints } from "../../styles";
+import { Cores, breakpoints } from "../../styles/styles";
 
 const fadeIn = keyframes`
   from {

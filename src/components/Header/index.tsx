@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ButtonCss } from "../../styles";
+import { ButtonCss } from "../../styles/styles";
 import { HeaderBar } from "./styles";
 import { Link } from "react-scroll";
 import Modal from "../Modal";
