@@ -139,6 +139,15 @@ export const FooterCss = styled.footer`
     }
   }
 
+  .footer-nav {
+    ul {
+      display: flex;
+      flex-direction: column; /* Empilhado por padrão */
+      gap: 20px;
+      align-items: center;
+    }
+  }
+
   @media (max-width: ${breakpoints.tablet}) {
     padding: 40px 0 20px;
 
@@ -183,6 +192,36 @@ export const FooterCss = styled.footer`
       .tech-item {
         font-size: 0.9rem;
       }
+    }
+
+    .footer-nav ul {
+      display: flex; /* Garante que os itens serão flexíveis */
+      flex-direction: row; /* Alinha os itens lado a lado */
+      flex-wrap: wrap; /* Quebra itens em múltiplas linhas, se necessário */
+      justify-content: center; /* Centraliza os itens */
+      gap: 16px; /* Define o espaçamento entre os itens */
+      padding: 0; /* Remove espaçamento interno */
+      margin: 0; /* Remove margem */
+      list-style: none; /* Remove o estilo de lista padrão */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .social-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav ul {
+      display: flex;
+      flex-direction: row; /* Itens lado a lado */
+      justify-content: center;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
   }
 `;

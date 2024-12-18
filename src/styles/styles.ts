@@ -26,15 +26,32 @@ export const GlobalCSs = createGlobalStyle`
         text-decoration: none;
     }
 
-    html {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
         scroll-behavior: smooth;
     }
 
     body {
         background-color: ${Cores.primaryBackground};
         color: ${Cores.primaryText};
-        overflow-x: hidden;
         line-height: 1.6;
+        min-height: 100vh;
+    }
+
+    #root {
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        overflow-x: hidden;
     }
 
     h2 {
@@ -60,13 +77,12 @@ export const GlobalCSs = createGlobalStyle`
     p {
         color: ${Cores.secondaryText};
         font-size: clamp(0.9rem, 2vw, 1.1rem);
+        max-width: 100%;
     }
 
-    .container {
-        max-width: 1200px;
-        width: 90%;
-        margin: 0 auto;
-        padding: 0 20px;
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
     @media (max-width: ${breakpoints.mobile}) {

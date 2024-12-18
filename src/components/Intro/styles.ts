@@ -126,13 +126,19 @@ export const IntroCss = styled.section`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 40px 0;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
 
     .container {
+      flex: 1;
       flex-direction: column;
       gap: 30px;
-      padding: 0 20px;
+      padding: 20px;
       align-items: center;
+      justify-content: center;
+      min-height: 100%;
     }
 
     .image {
@@ -141,6 +147,8 @@ export const IntroCss = styled.section`
       height: 200px;
       border-radius: 50%;
       overflow: hidden;
+      margin: 0 auto;
+      align-self: center;
 
       img {
         width: 100%;
@@ -171,64 +179,65 @@ export const IntroCss = styled.section`
 
     .btns {
       order: 1;
+      display: flex;
+      flex-direction: row;
       justify-content: center;
-      flex-wrap: wrap;
+      gap: 10px;
       width: 100%;
+      flex-wrap: nowrap;
+
+      .btn {
+        flex: 0 1 auto;
+      }
     }
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     padding: 20px 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
 
     .container {
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .image {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto;
-    }
-
-    .txt {
-      h1 {
-        font-size: 1.4rem;
-      }
-
-      h2 {
-        font-size: 1.1rem;
-      }
-
-      p {
-        font-size: 0.9rem;
-        max-width: 280px;
-        margin: 0 auto;
-      }
-    }
-
-    .btns {
-      gap: 15px;
-
-      .btn {
-        padding: 10px;
-        width: 45px;
-        height: 45px;
+      .content {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        border-radius: 50%;
+        text-align: center;
+        gap: 20px;
 
-        span {
-          display: none;
+        .image {
+          width: 200px !important;
+          height: 200px !important;
+          display: flex;
+          justify-content: center;
+          margin: 0 auto !important;
+
+          img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+            border-radius: 50%;
+          }
         }
 
-        i {
-          margin: 0;
-          font-size: 1.2rem;
+        .btns {
+          display: flex !important;
+          justify-content: center !important;
+          gap: 15px !important;
+          width: 100% !important;
+          padding: 0 20px;
+
+          button {
+            width: auto !important;
+            padding: 12px !important;
+
+            span {
+              display: none !important;
+            }
+
+            i {
+              margin: 0 !important;
+              font-size: 1.5rem !important;
+            }
+          }
         }
       }
     }

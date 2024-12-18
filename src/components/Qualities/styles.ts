@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { Cores } from "../../styles/styles";
 
-export const QualitiesCss = styled.div`
-  padding-top: 100px;
-  background-color: ${Cores.primaryBackground};
+export const QualitiesCss = styled.section`
   width: 100%;
-  height: 100vh;
+  overflow: hidden;
+  padding: 80px 0;
+  background-color: ${Cores.primaryBackground};
 
   .container {
     display: flex;
@@ -80,6 +80,8 @@ export const QualitiesCss = styled.div`
 
   .wrapper {
     width: 100%;
+    overflow: hidden;
+    position: relative;
     height: 100px;
     mask-image: linear-gradient(
       to right,

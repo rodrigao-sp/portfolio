@@ -80,6 +80,11 @@ export const ModalContent = styled.div`
     }
   }
 
+  .tab-container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
   .tab-buttons {
     display: flex;
     gap: 16px;
@@ -88,12 +93,12 @@ export const ModalContent = styled.div`
 
     button {
       flex: 1;
-      padding: 12px;
+      padding: 10px;
       background: transparent;
       border: 2px solid ${Cores.secondaryBackground};
       border-radius: 12px;
       color: ${Cores.secondaryText};
-      font-size: 1rem;
+      font-size: 0.9rem;
       cursor: pointer;
       transition: all 0.3s ease;
       display: flex;
@@ -102,7 +107,7 @@ export const ModalContent = styled.div`
       gap: 8px;
 
       i {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
 
       &.active {
@@ -110,11 +115,14 @@ export const ModalContent = styled.div`
         border-color: ${Cores.azul};
         color: ${Cores.primaryText};
       }
+    }
+  }
 
-      &:hover:not(.active) {
-        border-color: ${Cores.azul};
-        color: ${Cores.primaryText};
-      }
+  @media screen and (max-width: 480px) {
+    .tab-buttons {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
     }
   }
 
@@ -134,99 +142,93 @@ export const ModalContent = styled.div`
   .contact-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    margin-bottom: 24px;
-
-    @media (max-width: ${breakpoints.mobile}) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .contact-card {
-    padding: 24px;
-    border-radius: 16px;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease;
-    background: ${Cores.secondaryBackground};
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 12px;
 
-    i {
-      font-size: 2rem;
-      margin-bottom: 8px;
-    }
-
-    h4 {
+    .contact-card {
+      padding: 15px;
+      border-radius: 8px;
       color: ${Cores.primaryText};
-      font-size: 1.2rem;
-      margin: 0;
-    }
+      background: ${Cores.secondaryBackground};
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
 
-    p {
-      color: ${Cores.secondaryText};
-      font-size: 0.9rem;
-      margin: 0;
-    }
-
-    &:hover {
-      transform: translateY(-5px);
-    }
-
-    &.whatsapp {
       i {
-        color: #25d366;
+        font-size: 1.5rem;
       }
+
+      h4 {
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      p {
+        font-size: 0.8rem;
+        margin: 0;
+        text-align: center;
+        word-break: break-word;
+      }
+
       &:hover {
-        background: #25d366;
-        i,
-        h4,
-        p {
-          color: white;
+        transform: translateY(-5px);
+      }
+
+      &.whatsapp {
+        i {
+          color: #25d366;
+        }
+        &:hover {
+          background: #25d366;
+          i,
+          h4,
+          p {
+            color: white;
+          }
         }
       }
-    }
 
-    &.email {
-      i {
-        color: #ea4335;
-      }
-      &:hover {
-        background: #ea4335;
-        i,
-        h4,
-        p {
-          color: white;
+      &.email {
+        i {
+          color: #ea4335;
+        }
+        &:hover {
+          background: #ea4335;
+          i,
+          h4,
+          p {
+            color: white;
+          }
         }
       }
-    }
 
-    &.linkedin {
-      i {
-        color: #0077b5;
-      }
-      &:hover {
-        background: #0077b5;
-        i,
-        h4,
-        p {
-          color: white;
+      &.linkedin {
+        i {
+          color: #0077b5;
+        }
+        &:hover {
+          background: #0077b5;
+          i,
+          h4,
+          p {
+            color: white;
+          }
         }
       }
-    }
 
-    &.github {
-      i {
-        color: #333;
-      }
-      &:hover {
-        background: #333;
-        i,
-        h4,
-        p {
-          color: white;
+      &.github {
+        i {
+          color: #333;
+        }
+        &:hover {
+          background: #333;
+          i,
+          h4,
+          p {
+            color: white;
+          }
         }
       }
     }
@@ -257,9 +259,12 @@ export const ModalContent = styled.div`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 20px;
-    width: 90%;
-    margin: 0 10px;
+    .modal-content {
+      width: 90%;
+      max-width: 400px;
+      margin: 20px;
+      max-height: 90vh;
+    }
 
     .modal-header {
       h2 {
@@ -271,27 +276,38 @@ export const ModalContent = styled.div`
       }
     }
 
+    .tab-container {
+      padding: 0 12px;
+    }
+
     .tab-buttons {
+      flex-direction: column;
+      gap: 10px;
+
       button {
-        font-size: 0.9rem;
-        padding: 8px;
+        width: 100%;
+        padding: 12px;
       }
     }
 
     .contact-grid {
-      grid-template-columns: 1fr;
-      gap: 10px;
-    }
+      gap: 8px;
+      padding: 0 12px;
 
-    .contact-card {
-      padding: 12px;
+      .contact-card {
+        padding: 12px;
 
-      h4 {
-        font-size: 0.9rem;
-      }
+        i {
+          font-size: 1.2rem;
+        }
 
-      p {
-        font-size: 0.8rem;
+        h4 {
+          font-size: 0.9rem;
+        }
+
+        p {
+          font-size: 0.75rem;
+        }
       }
     }
   }
