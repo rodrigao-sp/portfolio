@@ -6,7 +6,7 @@ import { ButtonCss } from "../../styles/styles";
 const GITHUB_URL = "https://github.com/rodrigao-sp";
 const LINKEDIN_URL =
   "https://www.linkedin.com/in/rodrigo-da-silva-pires-a5223b25b/";
-const CURRICULO_URL = "/curriculo.pdf";
+const CURRICULO_URL = "/portfolio/curriculo.pdf";
 
 const openInNewTab = (url: string) => {
   window.open(url, "_blank", "noopener noreferrer");
