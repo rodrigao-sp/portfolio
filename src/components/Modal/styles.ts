@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { Cores, breakpoints } from "../../styles/styles";
+import { Cores } from "../../styles/styles";
 
 const fadeIn = keyframes`
   from {
@@ -118,14 +118,6 @@ export const ModalContent = styled.div`
     }
   }
 
-  @media screen and (max-width: 480px) {
-    .tab-buttons {
-      display: grid;
-      grid-template-columns: 1fr;
-      width: 100%;
-    }
-  }
-
   .section-container {
     min-height: 300px;
     opacity: 0;
@@ -182,9 +174,7 @@ export const ModalContent = styled.div`
         }
         &:hover {
           background: #25d366;
-          i,
-          h4,
-          p {
+          i, h4, p {
             color: white;
           }
         }
@@ -196,9 +186,7 @@ export const ModalContent = styled.div`
         }
         &:hover {
           background: #ea4335;
-          i,
-          h4,
-          p {
+          i, h4, p {
             color: white;
           }
         }
@@ -210,9 +198,7 @@ export const ModalContent = styled.div`
         }
         &:hover {
           background: #0077b5;
-          i,
-          h4,
-          p {
+          i, h4, p {
             color: white;
           }
         }
@@ -224,9 +210,7 @@ export const ModalContent = styled.div`
         }
         &:hover {
           background: #333;
-          i,
-          h4,
-          p {
+          i, h4, p {
             color: white;
           }
         }
@@ -258,7 +242,10 @@ export const ModalContent = styled.div`
     }
   }
 
-  @media (max-width: ${breakpoints.mobile}) {
+  /* Media queries com valores fixos */
+  @media (max-width: 768px) {
+    padding: 24px;
+    
     .modal-content {
       width: 90%;
       max-width: 400px;
@@ -281,7 +268,9 @@ export const ModalContent = styled.div`
     }
 
     .tab-buttons {
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
       gap: 10px;
 
       button {
@@ -291,11 +280,14 @@ export const ModalContent = styled.div`
     }
 
     .contact-grid {
-      gap: 8px;
-      padding: 0 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 0;
 
       .contact-card {
-        padding: 12px;
+        padding: 16px;
+        width: 100%;
 
         i {
           font-size: 1.2rem;
@@ -310,6 +302,10 @@ export const ModalContent = styled.div`
         }
       }
     }
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px;
   }
 `;
 
@@ -330,8 +326,30 @@ export const Form = styled.form`
       font-size: 1rem;
     }
 
+    textarea {
+      width: 100%;
+      padding: 10px 10px 10px 35px;
+      background-color: ${Cores.secondaryBackground};
+      border: 1px solid transparent;
+      border-radius: 8px;
+      color: ${Cores.primaryText};
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      min-height: 120px;
+      resize: none;
+
+      &:focus {
+        border-color: ${Cores.azul};
+        outline: none;
+      }
+
+      & ~ i {
+        top: 12px;
+        transform: none;
+      }
+    }
+
     input,
-    textarea,
     select {
       width: 100%;
       padding: 10px 10px 10px 35px;
@@ -354,17 +372,6 @@ export const Form = styled.form`
       background-repeat: no-repeat;
       background-position: right 16px center;
       cursor: pointer;
-    }
-
-    textarea {
-      min-height: 70px;
-      resize: vertical;
-      padding-top: 10px;
-      resize: none;
-
-      & + i {
-        top: 18px;
-      }
     }
   }
 

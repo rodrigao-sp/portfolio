@@ -79,16 +79,11 @@ const Qualities = () => (
     <div className="container">
       <h2>Qualidades</h2>
       <p>
-        Sou um desenvolvedor front-end apaixonado por inovação e tecnologia, com
-        uma sólida trajetória em criar experiências web robustas e escaláveis.
-        Minha especialidade inclui um profundo domínio de HTML, CSS e
-        JavaScript, além de frameworks modernos como React, que me permitem
-        desenvolver interfaces intuitivas e responsivas, sempre com as melhores
-        práticas de mercado. Atualmente, estou expandindo minha expertise em
-        Python, pois acredito no valor de encontrar soluções eficientes para
-        problemas complexos. Com facilidade para trabalhar em equipe, sou movido
-        pela troca de conhecimento e pela busca constante de aprimoramento,
-        sempre visando entregar resultados excepcionais.
+        Desenvolvedor front-end apaixonado por criar experiências web impactantes. 
+        Especialista em HTML, CSS e JavaScript, com domínio em React para interfaces 
+        responsivas e intuitivas. Expandindo conhecimentos em Python e comprometido 
+        com soluções eficientes para desafios complexos. Colaborativo, movido pela 
+        troca de conhecimento e constante aprimoramento técnico.
       </p>
       <div className="icons">
         {ICONS.map((icon, index) => (

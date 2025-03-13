@@ -10,12 +10,6 @@ export const Cores = {
   hover: "#58A6FF",
 };
 
-export const breakpoints = {
-  mobile: "320px",
-  tablet: "768px",
-  desktop: "1024px",
-};
-
 export const GlobalCSs = createGlobalStyle`
     * {
         margin: 0;
@@ -31,6 +25,7 @@ export const GlobalCSs = createGlobalStyle`
         width: 100%;
         position: relative;
         scroll-behavior: smooth;
+        box-sizing: border-box;
     }
 
     body {
@@ -38,12 +33,15 @@ export const GlobalCSs = createGlobalStyle`
         color: ${Cores.primaryText};
         line-height: 1.6;
         min-height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     #root {
         width: 100%;
         overflow-x: hidden;
         position: relative;
+        box-sizing: border-box;
     }
 
     .container {
@@ -51,7 +49,7 @@ export const GlobalCSs = createGlobalStyle`
         width: 100%;
         margin: 0 auto;
         padding: 0 20px;
-        overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     h2 {
@@ -60,6 +58,8 @@ export const GlobalCSs = createGlobalStyle`
         font-size: clamp(1.5rem, 5vw, 2.5rem);
         color: ${Cores.primaryText};
         position: relative;
+        width: 100%;
+        box-sizing: border-box;
         
         &:after {
             content: '';
@@ -78,14 +78,17 @@ export const GlobalCSs = createGlobalStyle`
         color: ${Cores.secondaryText};
         font-size: clamp(0.9rem, 2vw, 1.1rem);
         max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     img {
         max-width: 100%;
         height: auto;
+        box-sizing: border-box;
     }
 
-    @media (max-width: ${breakpoints.mobile}) {
+    @media (max-width: 320px) {
         .container {
             padding: 0 15px;
         }
@@ -106,6 +109,8 @@ export const ButtonCss = styled.button`
   padding: 0 16px;
   transition: all 0.2s ease-in-out;
   font-weight: 500;
+  white-space: nowrap;
+  box-sizing: border-box;
 
   i {
     font-size: 1.2rem;
@@ -117,7 +122,7 @@ export const ButtonCss = styled.button`
     transform: translateY(-2px);
   }
 
-  @media (max-width: ${breakpoints.mobile}) {
+  @media (max-width: 320px) {
     padding: 0 12px;
     height: 36px;
 

@@ -87,6 +87,7 @@ const Intro = () => {
             <img
               src={PerfilImage}
               alt="Foto de perfil de Rodrigo da Silva Pires"
+              className="profile-image"
             />
           </div>
         </div>

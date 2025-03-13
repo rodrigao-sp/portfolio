@@ -52,7 +52,7 @@ const Modal = ({ isOpen, onClose }: ModalProps) => {
           <AnimatedIcon className="header-icon">
             <i className="fas fa-handshake"></i>
           </AnimatedIcon>
-          <h2>Vamos Trabalhar Juntos!</h2>
+          <h2>Contatos</h2>
         </div>
 
         <div className="tab-buttons">
@@ -61,7 +61,7 @@ const Modal = ({ isOpen, onClose }: ModalProps) => {
             onClick={() => setActiveSection("contacts")}
           >
             <i className="fas fa-address-book"></i>
-            Contatos Diretos
+            Contatos
           </button>
           <button
             className={activeSection === "form" ? "active" : ""}

@@ -30,11 +30,11 @@ const Header = () => {
           <div className="social-buttons">
             <ButtonCss
               className="contact-btn"
-              aria-label="Trabalhar Juntos"
+              aria-label="Contatos"
               onClick={() => setIsModalOpen(true)}
             >
               <i className="fa-solid fa-handshake"></i>
-              <span>Trabalhar Juntos</span>
+              <span>Trabalhar juntos</span>
             </ButtonCss>
           </div>
         </div>

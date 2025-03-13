@@ -4,8 +4,10 @@ import { Cores } from "../../styles/styles";
 export const QualitiesCss = styled.section`
   width: 100%;
   overflow: hidden;
-  padding: 80px 0;
-  background-color: ${Cores.primaryBackground};
+  padding-top: 100px;
+  background-color: ${Cores.secondaryBackground};
+  position: relative;
+  z-index: 1;
 
   .container {
     display: flex;
@@ -13,6 +15,10 @@ export const QualitiesCss = styled.section`
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
   h3 {

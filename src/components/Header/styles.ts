@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Cores, breakpoints } from "../../styles/styles";
+import { Cores } from "../../styles/styles";
 import { slideInLeft, slideInRight } from "../../styles/animations";
 
 export const HeaderBar = styled.header`
@@ -71,7 +71,7 @@ export const HeaderBar = styled.header`
     color: ${Cores.primaryText};
   }
 
-  @media (max-width: ${breakpoints.tablet}) {
+  @media (max-width: 768px) {
     .menu-toggle {
       display: block;
     }
@@ -131,7 +131,7 @@ export const HeaderBar = styled.header`
     }
   }
 
-  @media (max-width: ${breakpoints.mobile}) {
+  @media (max-width: 320px) {
     height: 60px;
 
     .container {
@@ -190,7 +190,7 @@ export const ButtonCss = styled.button`
     background-color: ${Cores.hover};
   }
 
-  @media (max-width: ${breakpoints.mobile}) {
+  @media (max-width: 320px) {
     padding: 6px 12px;
 
     span {

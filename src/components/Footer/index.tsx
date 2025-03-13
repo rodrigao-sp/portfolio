@@ -70,14 +70,16 @@ const Footer = () => {
           </div>
 
           <div className="footer-info">
-            <h3>Rodrigo S. Pires</h3>
+            <h3>Contato</h3>
+            <p className="bio">
+              Desenvolvedor front-end apaixonado pela criação de interfaces interativas e responsivas.
+            </p>
             <div className="social-buttons">
               {socialLinks.map((link) => (
                 <ButtonCss
                   key={link.name}
                   onClick={() => window.open(link.url, "_blank")}
                   aria-label={link.name}
-                  className={`social-btn ${link.icon}`}
                 >
                   <i className={`fab fa-${link.icon}`}></i>
                 </ButtonCss>
@@ -89,10 +91,10 @@ const Footer = () => {
             <h3>Tecnologias</h3>
             <div className="tech-grid">
               {techIcons.map((tech) => (
-                <span key={tech.name} className="tech-item">
+                <div key={tech.name} className="tech-item">
                   <i className={tech.icon}></i>
                   <span className="tech-name">{tech.name}</span>
-                </span>
+                </div>
               ))}
             </div>
           </div>
