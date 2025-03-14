@@ -59,10 +59,10 @@ const Projects = () => {
       tecnologias: ["HTML", "SCSS", "Gulp", "JavaScript"],
     },
     {
-      titulo: "Delivery",
+      titulo: "Massas Grazi",
       categoria: "sites",
       descricao:
-        " Site de delivery, utilizando React Router DOM, Tailwind CSS, Framer Motion",
+        " Site de delivery focado em massas artesanais, utilizando React Router DOM, Tailwind CSS, Framer Motion",
       imgSrc: Massas,
       linkSite: "https://massas-grazi.vercel.app/",
       linkGithub: "https://github.com/rodrigao-sp/Massas-Grazi",
